@@ -1,3 +1,5 @@
+import { outputChar, readCharFromHost } from './env';
+
 const NUM_CAP: u16 = 32768;
 const REGISTER_CAP: u16 = 32776;
 
@@ -5,12 +7,26 @@ export function readMemory(offset: u32): u16 {
   return load<u16>(offset);
 }
 
-let pc = 0;
+let pc: u16 = 0;
 
 const reg: StaticArray<u16> = [0, 0, 0, 0, 0, 0, 0, 0];
 const stack: StaticArray<u16> = new StaticArray<u16>(1024);
 let stackIndex: u16 = 0;
 let textBuffer: string[] = [];
+
+function pushStack(value: u16): void {
+  stack[stackIndex] = value;
+  stackIndex += 1;
+}
+
+function popStack(): u16 {
+  if (stackIndex === 0) {
+    throw new Error('Empty stack');
+  }
+
+  stackIndex -= 1;
+  return stack[stackIndex];
+}
 
 function loadOp(): u16 {
   const opCode = load<u16>(pc * 2);
@@ -48,19 +64,31 @@ function readValue(): u16 {
   throw new Error(`Invalid value ${value}`);
 }
 
-export function nextOp(): boolean {
-  const opCode = loadOp();
-
-  if (opCode !== 19 && textBuffer.length > 0) {
+function checkOutput(): void {
+  if (textBuffer.length > 0) {
     console.log(textBuffer.join(''));
     textBuffer.length = 0;
+  }
+}
+
+function halt(): boolean {
+  console.log('[HALT]');
+  return false;
+}
+
+function nextOp(): boolean {
+  const opCode = loadOp();
+
+  if (opCode !== 19) {
+    checkOutput();
   }
 
   switch (opCode) {
     // halt: 0
     //   stop execution and terminate the program
-    case 0:
-      return false;
+    case 0: {
+      return halt();
+    }
 
     // set: 1 a b
     //   set register <a> to the value of <b>
@@ -73,21 +101,17 @@ export function nextOp(): boolean {
 
     // push: 2 a
     //   push <a> onto the stack
-    case 2:
+    case 2: {
       const a = readValue();
-      stack[stackIndex] = a;
-      stackIndex += 1;
+      pushStack(a);
       break;
+    }
 
     // pop: 3 a
     //   remove the top element from the stack and write it into <a>; empty stack = error
     case 3: {
-      if (stackIndex === 0) {
-        throw new Error('Empty stack');
-      }
       const a = readRegister();
-      stackIndex -= 1;
-      reg[a] = stack[stackIndex];
+      reg[a] = popStack();
       break;
     }
 
@@ -160,6 +184,26 @@ export function nextOp(): boolean {
       break;
     }
 
+    // mult: 10 a b c
+    //   store into <a> the product of <b> and <c> (modulo 32768)
+    case 10: {
+      const a = readRegister();
+      const b = readValue();
+      const c = readValue();
+      reg[a] = (b * c) % NUM_CAP;
+      break;
+    }
+
+    // mod: 11 a b c
+    //   store into <a> the remainder of <b> divided by <c>
+    case 11: {
+      const a = readRegister();
+      const b = readValue();
+      const c = readValue();
+      reg[a] = b % c;
+      break;
+    }
+
     // and: 12 a b c
     //   stores into <a> the bitwise and of <b> and <c>
     case 12: {
@@ -180,12 +224,73 @@ export function nextOp(): boolean {
       break;
     }
 
+    // not: 14 a b
+    //   stores 15-bit bitwise inverse of <b> in <a>
+    case 14: {
+      const a = readRegister();
+      const b = readValue();
+      reg[a] = b ^ 0x7fff;
+      break;
+    }
+
+    // rmem: 15 a b
+    //   read memory at address <b> and write it to <a>
+    case 15: {
+      const a = readRegister();
+      const b = readValue();
+      reg[a] = load<u16>(b * 2);
+      break;
+    }
+
+    // wmem: 16 a b
+    //   write the value from <b> into memory at address <a>
+    case 16: {
+      const a = readValue();
+      const b = readValue();
+      store<u16>(a * 2, b);
+      break;
+    }
+
+    // call: 17 a
+    //   write the address of the next instruction to the stack and jump to <a>
+    case 17: {
+      const a = readValue();
+      pushStack(pc);
+      pc = a;
+      break;
+    }
+
+    // ret: 18
+    //   remove the top element from the stack and jump to it; empty stack = halt
+    case 18: {
+      if (stackIndex === 0) {
+        return halt();
+      }
+      pc = popStack();
+      break;
+    }
+
     // out: 19 a
     //   write the character represented by ascii code <a> to the terminal
     case 19:
       const value = readValue();
-      textBuffer.push(String.fromCodePoint(value));
+      // textBuffer.push(String.fromCodePoint(value));
+      outputChar(value);
       break;
+
+    // in: 20 a
+    //   read a character from the terminal and write its ascii code to <a>;
+    //   it can be assumed that once input starts, it will continue until a
+    //   newline is encountered; this means that you can safely read whole
+    //   lines from the keyboard and trust that they will be fully read
+    case 20: {
+      // throw new Error();
+      const a = readRegister();
+      const char = readCharFromHost();
+      reg[a] = char;
+      // store<u16>(a * 2, char);
+      break;
+    }
 
     // noop: 21
     //   no operation

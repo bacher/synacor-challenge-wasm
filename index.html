@@ -3,7 +3,59 @@
   <head>
     <title>Synacor challenge in WASM</title>
     <script type="module">
-      import { run } from './build/debug.js';
+      import { instantiate } from './build/debug.js';
+
+      const NEW_LINE_CHAR_CODE = '\n'.charCodeAt(0);
+
+      const url = new URL('build/debug.wasm', import.meta.url);
+
+      const module = await WebAssembly.compileStreaming(globalThis.fetch(url));
+
+      let message = undefined;
+
+      const outputCharBuffer = [];
+
+      const inputLines =
+        ['help', 'look tablet', 'take tablet', 'inv', 'look', 'go '].join(
+          '\n',
+        ) + '\n';
+      let inputIndex = 0;
+      let inputBuffer = '';
+
+      export const { memory, readMemory, run } = await instantiate(module, {
+        env: {
+          readCharFromHost: () => {
+            const char = inputLines[inputIndex];
+
+            if (char === undefined) {
+              throw new Error('Input is ended');
+            }
+
+            if (char === '\n') {
+              console.log(`> ${inputBuffer}`);
+              inputBuffer = '';
+            } else {
+              inputBuffer += char;
+            }
+
+            inputIndex += 1;
+            return char.charCodeAt(0);
+          },
+          outputChar: (value) => {
+            if (value === NEW_LINE_CHAR_CODE) {
+              if (outputCharBuffer.length) {
+                console.log(outputCharBuffer.join(''));
+                outputCharBuffer.length = 0;
+              }
+            } else {
+              outputCharBuffer.push(String.fromCodePoint(value));
+            }
+          },
+        },
+      });
+
+      console.log('[RUN]');
+
       run();
     </script>
   </head>
