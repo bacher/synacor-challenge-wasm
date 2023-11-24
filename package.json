@@ -1,0 +1,28 @@
+{
+  "name": "synacor-challenge-wasm",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "./utils/build.sh",
+    "build:as:debug": "asc assembly/index.ts --target debug",
+    "build:as:release": "asc assembly/index.ts --target release",
+    "test": "node tests",
+    "start": "npx serve ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "assemblyscript": "^0.27.21",
+    "lodash-es": "^4.17.21",
+    "prettier": "^3.1.0"
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./build/release.js",
+      "types": "./build/release.d.ts"
+    }
+  }
+}
