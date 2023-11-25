@@ -8,11 +8,12 @@ const enum VmReturnType {
 
 const NUM_CAP: u16 = 32768;
 const REGISTER_CAP: u16 = 32776;
+const STACK_CAP = 4 * 1024;
 
 let pc: u16 = 0;
 
 const reg: StaticArray<u16> = [0, 0, 0, 0, 0, 0, 0, 0];
-const stack: StaticArray<u16> = new StaticArray<u16>(1024);
+const stack: StaticArray<u16> = new StaticArray<u16>(STACK_CAP);
 let stackIndex: u16 = 0;
 let textBuffer: string[] = [];
 let inputBuffer: u8[] = [];
@@ -21,7 +22,19 @@ export function readMemory(offset: u32): u16 {
   return load<u16>(offset);
 }
 
+export function setRegisterValue(regIndex: u8, value: u16): void {
+  reg[regIndex] = value;
+}
+
+export function getCurrentPc(): u16 {
+  return pc;
+}
+
 function pushStack(value: u16): void {
+  if (stackIndex === STACK_CAP) {
+    throw new Error('Stack overflow');
+  }
+
   stack[stackIndex] = value;
   stackIndex += 1;
 }
@@ -79,7 +92,6 @@ function checkOutput(): void {
 }
 
 function halt(): VmReturnType {
-  console.log('[HALT]');
   return VmReturnType.HALT;
 }
 

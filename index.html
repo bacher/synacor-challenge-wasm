@@ -15,25 +15,82 @@
 
       const outputCharBuffer = [];
 
-      const inputLines = ['help', 'look tablet', 'take tablet', 'inv', 'look'];
-      let inputIndex = 0;
+      const inputLines = [
+        'take tablet',
+        'use tablet',
+        'doorway',
+        'north',
+        'north',
+        'bridge',
+        'continue',
+        'down',
+        'east',
+        'take empty lantern',
+        'west',
+        'west',
+        'passage',
+        'ladder',
+        'west',
+        'south',
+        'north',
+        'take can',
+        'use can',
+        'use lantern',
+        'west',
+        'ladder',
+        'darkness',
+        'continue',
+        'west',
+        'west',
+        'west',
+        'west',
+        'north',
+        'take red coin',
+        'north',
+        'west',
+        'take blue coin',
+        'up',
+        'take shiny coin',
+        'down',
+        'east',
+        'east',
+        'take concave coin',
+        'down',
+        'take corroded coin',
+        'up',
+        'west',
+        'use blue coin',
+        'use red coin',
+        'use shiny coin',
+        'use concave coin',
+        'use corroded coin',
+        'north',
+        'take teleporter',
+        'use teleporter',
+        'take business card',
+        'take strange book',
+      ];
       let inputBuffer = '';
 
-      export const { memory, readMemory, putUserInput, run } =
-        await instantiate(module, {
-          env: {
-            outputChar: (value) => {
-              if (value === NEW_LINE_CHAR_CODE) {
-                if (outputCharBuffer.length) {
-                  console.log(outputCharBuffer.join(''));
-                  outputCharBuffer.length = 0;
-                }
-              } else {
-                outputCharBuffer.push(String.fromCodePoint(value));
-              }
-            },
+      export const {
+        memory,
+        readMemory,
+        setRegisterValue,
+        getCurrentPc,
+        putUserInput,
+        run,
+      } = await instantiate(module, {
+        env: {
+          outputChar: (value) => {
+            if (value === NEW_LINE_CHAR_CODE) {
+              console.log(outputCharBuffer.join(''));
+              outputCharBuffer.length = 0;
+            } else {
+              outputCharBuffer.push(String.fromCodePoint(value));
+            }
           },
-        });
+        },
+      });
 
       function timeout(ms) {
         return new Promise((resolve) => setTimeout(resolve, ms));
@@ -52,13 +109,40 @@
             case 1: {
               await timeout(0);
 
-              const message = window.prompt('>')?.trim();
-              if (!message) {
-                console.log('[INTERRUPTED]');
-                return;
+              let message;
+
+              if (inputLines.length) {
+                message = inputLines.shift();
+              } else {
+                message = window.prompt('Enter a command:')?.trim();
+                if (!message) {
+                  console.log('[INTERRUPTED]');
+                  return;
+                }
               }
 
+              console.log(`\n> ${message}\n\n`);
+
               await timeout(0);
+
+              if (message === '.pc') {
+                console.log('# current pc:', getCurrentPc());
+                break;
+              }
+
+              const match = message.match(/^\.set (\d+) (\d+)$/);
+              if (match) {
+                const regIndex = Number.parseInt(match[1], 10);
+                const value = Number.parseInt(match[2], 10);
+
+                if (regIndex >= 8) {
+                  throw new Error();
+                }
+
+                console.log(`# value of ${regIndex} register set to ${value}`);
+                setRegisterValue(regIndex, value);
+                break;
+              }
 
               const charCodes = `${message}\n`
                 .split('')
