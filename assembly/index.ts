@@ -1,11 +1,13 @@
-import { outputChar, readCharFromHost } from './env';
+import { outputChar } from './env';
+
+const enum VmReturnType {
+  HALT = 0,
+  RUNNING = 1,
+  INPUT_STARVATION = 2,
+}
 
 const NUM_CAP: u16 = 32768;
 const REGISTER_CAP: u16 = 32776;
-
-export function readMemory(offset: u32): u16 {
-  return load<u16>(offset);
-}
 
 let pc: u16 = 0;
 
@@ -13,6 +15,11 @@ const reg: StaticArray<u16> = [0, 0, 0, 0, 0, 0, 0, 0];
 const stack: StaticArray<u16> = new StaticArray<u16>(1024);
 let stackIndex: u16 = 0;
 let textBuffer: string[] = [];
+let inputBuffer: u8[] = [];
+
+export function readMemory(offset: u32): u16 {
+  return load<u16>(offset);
+}
 
 function pushStack(value: u16): void {
   stack[stackIndex] = value;
@@ -71,12 +78,12 @@ function checkOutput(): void {
   }
 }
 
-function halt(): boolean {
+function halt(): VmReturnType {
   console.log('[HALT]');
-  return false;
+  return VmReturnType.HALT;
 }
 
-function nextOp(): boolean {
+function nextOp(): VmReturnType {
   const opCode = loadOp();
 
   if (opCode !== 19) {
@@ -284,11 +291,20 @@ function nextOp(): boolean {
     //   newline is encountered; this means that you can safely read whole
     //   lines from the keyboard and trust that they will be fully read
     case 20: {
-      // throw new Error();
-      const a = readRegister();
-      const char = readCharFromHost();
-      reg[a] = char;
-      // store<u16>(a * 2, char);
+      // // First Version:
+      // const charCode = readCharFromHost();
+      // reg[a] = charCode;
+      // break;
+
+      if (inputBuffer.length) {
+        const charCode = inputBuffer.shift();
+
+        const a = readRegister();
+        reg[a] = charCode;
+      } else {
+        pc -= 1;
+        return VmReturnType.INPUT_STARVATION;
+      }
       break;
     }
 
@@ -301,9 +317,26 @@ function nextOp(): boolean {
       throw new Error(`Unknown command (${opCode})`);
   }
 
-  return true;
+  return VmReturnType.RUNNING;
 }
 
-export function run(): void {
-  while (nextOp()) {}
+export function putUserInput(inputString: u8[]): void {
+  inputBuffer = inputString;
+}
+
+export function run(): u8 {
+  while (true) {
+    const returnType = nextOp();
+
+    switch (returnType) {
+      case VmReturnType.HALT: {
+        return 0;
+      }
+      case VmReturnType.RUNNING: {
+        break;
+      }
+      case VmReturnType.INPUT_STARVATION:
+        return 1;
+    }
+  }
 }

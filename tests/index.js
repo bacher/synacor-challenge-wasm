@@ -12,27 +12,9 @@ const outputCharBuffer = [];
 const inputLines =
   ['look tablet', 'take tablet', 'inv', 'look', 'go '].join('\n') + '\n';
 let inputIndex = 0;
-let inputBuffer = '';
 
 const { run, readMemory } = await instantiate(module, {
   env: {
-    readCharFromHost: () => {
-      const char = inputLines[inputIndex];
-
-      if (char === undefined) {
-        throw new Error('Input is ended');
-      }
-
-      if (char === '\n') {
-        console.log(`> ${inputBuffer}`);
-        inputBuffer = '';
-      } else {
-        inputBuffer += char;
-      }
-
-      inputIndex += 1;
-      return char.charCodeAt(0);
-    },
     outputChar: (value) => {
       if (value === NEW_LINE_CHAR_CODE) {
         if (outputCharBuffer.length) {

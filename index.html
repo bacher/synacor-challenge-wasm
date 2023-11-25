@@ -15,48 +15,71 @@
 
       const outputCharBuffer = [];
 
-      const inputLines =
-        ['help', 'look tablet', 'take tablet', 'inv', 'look', 'go '].join(
-          '\n',
-        ) + '\n';
+      const inputLines = ['help', 'look tablet', 'take tablet', 'inv', 'look'];
       let inputIndex = 0;
       let inputBuffer = '';
 
-      export const { memory, readMemory, run } = await instantiate(module, {
-        env: {
-          readCharFromHost: () => {
-            const char = inputLines[inputIndex];
-
-            if (char === undefined) {
-              throw new Error('Input is ended');
-            }
-
-            if (char === '\n') {
-              console.log(`> ${inputBuffer}`);
-              inputBuffer = '';
-            } else {
-              inputBuffer += char;
-            }
-
-            inputIndex += 1;
-            return char.charCodeAt(0);
-          },
-          outputChar: (value) => {
-            if (value === NEW_LINE_CHAR_CODE) {
-              if (outputCharBuffer.length) {
-                console.log(outputCharBuffer.join(''));
-                outputCharBuffer.length = 0;
+      export const { memory, readMemory, putUserInput, run } =
+        await instantiate(module, {
+          env: {
+            outputChar: (value) => {
+              if (value === NEW_LINE_CHAR_CODE) {
+                if (outputCharBuffer.length) {
+                  console.log(outputCharBuffer.join(''));
+                  outputCharBuffer.length = 0;
+                }
+              } else {
+                outputCharBuffer.push(String.fromCodePoint(value));
               }
-            } else {
-              outputCharBuffer.push(String.fromCodePoint(value));
-            }
+            },
           },
-        },
+        });
+
+      function timeout(ms) {
+        return new Promise((resolve) => setTimeout(resolve, ms));
+      }
+
+      async function runApplication() {
+        console.log('[RUN]');
+
+        while (true) {
+          const returnCode = run();
+
+          switch (returnCode) {
+            case 0:
+              console.log('[HALT]');
+              return;
+            case 1: {
+              await timeout(0);
+
+              const message = window.prompt('>')?.trim();
+              if (!message) {
+                console.log('[INTERRUPTED]');
+                return;
+              }
+
+              await timeout(0);
+
+              const charCodes = `${message}\n`
+                .split('')
+                .map((char) => char.charCodeAt(0));
+
+              for (const code of charCodes) {
+                if (code >= 128) {
+                  throw new Error(`Invalid char code: (${code})`);
+                }
+              }
+
+              putUserInput(charCodes);
+              break;
+            }
+          }
+        }
+      }
+
+      runApplication().catch((error) => {
+        console.error(error);
       });
-
-      console.log('[RUN]');
-
-      run();
     </script>
   </head>
   <body></body>
