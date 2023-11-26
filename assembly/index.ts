@@ -10,6 +10,25 @@ const NUM_CAP: u16 = 32768;
 const REGISTER_CAP: u16 = 32776;
 const STACK_CAP = 4 * 1024;
 
+const haltOnNewLabel = false;
+
+const labelsOffsets: StaticArray<u16> = [
+  347, 358, 368, 397, 424, 453, 484, 495, 500, 564, 590, 684, 708, 731, 845,
+  978, 1000, 1023, 1074, 1093, 1118, 1139, 1158, 1177, 1208, 1289, 1312, 1381,
+  1414, 1437, 1480, 1507, 1563, 1566, 1618, 1645, 1666, 1711, 1714, 1730, 1787,
+  1816, 1830, 1852, 1886, 2019, 2047, 2060, 2092, 2099, 2112, 2734, 2742, 2770,
+  2791, 2848, 2885, 2924, 2939, 2944, 2950, 3032, 3104, 3146, 3189, 3193, 3216,
+  3238, 3302, 3326, 3457, 3481, 3651, 3694, 3940, 4882, 5017, 5312, 5336, 5579,
+  5605, 5636, 5714, 5871, 5918, 5959, 5989, 6019, 6035, 6048,
+];
+
+const functionsOffsets: StaticArray<u16> = [
+  1285, 1287, 1458, 1518, 1528, 1531, 1543, 1571, 1588, 1605, 1619, 1648, 1667,
+  1723, 1767, 1841, 2001, 2125, 2964, 3245, 3362, 3400, 3568, 3656, 3727, 3742,
+  3776, 3786, 3806, 3893, 4720, 4799, 4885, 4977, 5360, 5377, 5394, 5411, 5428,
+  5445, 5814, 5823, 5846, 5876, 5893, 5921, 5964, 5976, 5990, 6027,
+];
+
 let pc: u16 = 0;
 
 const reg: StaticArray<u16> = [0, 0, 0, 0, 0, 0, 0, 0];
@@ -17,9 +36,14 @@ const stack: StaticArray<u16> = new StaticArray<u16>(STACK_CAP);
 let stackIndex: u16 = 0;
 let textBuffer: string[] = [];
 let inputBuffer: u8[] = [];
+let debugMode = false;
 
 export function readMemory(offset: u32): u16 {
   return load<u16>(offset);
+}
+
+export function setDebugMode(enable: boolean): void {
+  debugMode = enable;
 }
 
 export function setRegisterValue(regIndex: u8, value: u16): void {
@@ -96,6 +120,7 @@ function halt(): VmReturnType {
 }
 
 function nextOp(): VmReturnType {
+  const opOffset = pc;
   const opCode = loadOp();
 
   if (opCode !== 19) {
@@ -158,6 +183,13 @@ function nextOp(): VmReturnType {
     //   jump to <a>
     case 6: {
       pc = readValue();
+
+      if (!labelsOffsets.includes(pc)) {
+        console.log(`### NEW LABEL: (${pc}) ###`);
+        if (haltOnNewLabel) {
+          return halt();
+        }
+      }
       break;
     }
 
@@ -168,6 +200,13 @@ function nextOp(): VmReturnType {
 
       if (a !== 0) {
         pc = readValue();
+
+        if (!labelsOffsets.includes(pc)) {
+          console.log(`### NEW LABEL: (${pc}) ###`);
+          if (haltOnNewLabel) {
+            return halt();
+          }
+        }
       } else {
         pc += 1;
       }
@@ -181,6 +220,13 @@ function nextOp(): VmReturnType {
 
       if (a === 0) {
         pc = readValue();
+
+        if (!labelsOffsets.includes(pc)) {
+          console.log(`### NEW LABEL: (${pc}) ###`);
+          if (haltOnNewLabel) {
+            return halt();
+          }
+        }
       } else {
         pc += 1;
       }
@@ -274,8 +320,39 @@ function nextOp(): VmReturnType {
     //   write the address of the next instruction to the stack and jump to <a>
     case 17: {
       const a = readValue();
+
+      if (!functionsOffsets.includes(a)) {
+        console.log(`### NEW FUNC: (${a}) ###`);
+        if (haltOnNewLabel) {
+          return halt();
+        }
+      }
+
+      if (a === 6027) {
+        reg[0] = reg[7] + 1;
+        reg[1] = reg[7];
+        console.log(
+          `[function overriding #6027 called, continue from pc: (${pc})]`,
+        );
+        break;
+      }
+
       pushStack(pc);
       pc = a;
+
+      if (debugMode) {
+        if (opOffset === 1536 && a === 2125) {
+          break;
+        }
+        if (opOffset === 1498 && a === 1531) {
+          break;
+        }
+
+        const modifier =
+          opOffset === 727 || opOffset === 1498 ? ' (dynamic)' : '';
+
+        console.log(`    debug: call from (${opOffset}) to (${a})${modifier}`);
+      }
       break;
     }
 

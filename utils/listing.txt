@@ -1,0 +1,2143 @@
+    0  noop
+    1  noop
+    2  out   87(W)
+    4  out   101(e)
+    6  out   108(l)
+    8  out   99(c)
+   10  out   111(o)
+   12  out   109(m)
+   14  out   101(e)
+   16  out   32( )
+   18  out   116(t)
+   20  out   111(o)
+   22  out   32( )
+   24  out   116(t)
+   26  out   104(h)
+   28  out   101(e)
+   30  out   32( )
+   32  out   83(S)
+   34  out   121(y)
+   36  out   110(n)
+   38  out   97(a)
+   40  out   99(c)
+   42  out   111(o)
+   44  out   114(r)
+   46  out   32( )
+   48  out   67(C)
+   50  out   104(h)
+   52  out   97(a)
+   54  out   108(l)
+   56  out   108(l)
+   58  out   101(e)
+   60  out   110(n)
+   62  out   103(g)
+   64  out   101(e)
+   66  out   33
+   68  out   10(\n)
+   70  out   80(P)
+   72  out   108(l)
+   74  out   101(e)
+   76  out   97(a)
+   78  out   115(s)
+   80  out   101(e)
+   82  out   32( )
+   84  out   114(r)
+   86  out   101(e)
+   88  out   99(c)
+   90  out   111(o)
+   92  out   114(r)
+   94  out   100(d)
+   96  out   32( )
+   98  out   121(y)
+  100  out   111(o)
+  102  out   117(u)
+  104  out   114(r)
+  106  out   32( )
+  108  out   112(p)
+  110  out   114(r)
+  112  out   111(o)
+  114  out   103(g)
+  116  out   114(r)
+  118  out   101(e)
+  120  out   115(s)
+  122  out   115(s)
+  124  out   32( )
+  126  out   98(b)
+  128  out   121(y)
+  130  out   32( )
+  132  out   112(p)
+  134  out   117(u)
+  136  out   116(t)
+  138  out   116(t)
+  140  out   105(i)
+  142  out   110(n)
+  144  out   103(g)
+  146  out   32( )
+  148  out   99(c)
+  150  out   111(o)
+  152  out   100(d)
+  154  out   101(e)
+  156  out   115(s)
+  158  out   32( )
+  160  out   108(l)
+  162  out   105(i)
+  164  out   107(k)
+  166  out   101(e)
+  168  out   10(\n)
+  170  out   116(t)
+  172  out   104(h)
+  174  out   105(i)
+  176  out   115(s)
+  178  out   32( )
+  180  out   111(o)
+  182  out   110(n)
+  184  out   101(e)
+  186  out   32( )
+  188  out   105(i)
+  190  out   110(n)
+  192  out   116(t)
+  194  out   111(o)
+  196  out   32( )
+  198  out   116(t)
+  200  out   104(h)
+  202  out   101(e)
+  204  out   32( )
+  206  out   99(c)
+  208  out   104(h)
+  210  out   97(a)
+  212  out   108(l)
+  214  out   108(l)
+  216  out   101(e)
+  218  out   110(n)
+  220  out   103(g)
+  222  out   101(e)
+  224  out   32( )
+  226  out   119(w)
+  228  out   101(e)
+  230  out   98(b)
+  232  out   115(s)
+  234  out   105(i)
+  236  out   116(t)
+  238  out   101(e)
+  240  out   58
+  242  out   32( )
+  244  out   116(t)
+  246  out   118(v)
+  248  out   82(R)
+  250  out   87(W)
+  252  out   77(M)
+  254  out   101(e)
+  256  out   72(H)
+  258  out   116(t)
+  260  out   72(H)
+  262  out   69(E)
+  264  out   101(e)
+  266  out   111(o)
+  268  out   10(\n)
+  270  out   10(\n)
+  272  out   69(E)
+  274  out   120(x)
+  276  out   101(e)
+  278  out   99(c)
+  280  out   117(u)
+  282  out   116(t)
+  284  out   105(i)
+  286  out   110(n)
+  288  out   103(g)
+  290  out   32( )
+  292  out   115(s)
+  294  out   101(e)
+  296  out   108(l)
+  298  out   102(f)
+  300  out   45
+  302  out   116(t)
+  304  out   101(e)
+  306  out   115(s)
+  308  out   116(t)
+  310  out   46
+  312  out   46
+  314  out   46
+  316  out   10(\n)
+  318  out   10(\n)
+  320  jmp   347(pc)
+  322  out   106(j)
+  324  out   109(m)
+  326  out   112(p)
+  328  out   32( )
+  330  out   102(f)
+  332  out   97(a)
+  334  out   105(i)
+  336  out   108(l)
+  338  out   115(s)
+  340  out   10(\n)
+  342  halt
+  343  noop
+  344  noop
+  345  noop
+  346  noop
+label#347:
+  347  noop
+  348  noop
+  349  noop
+  350  noop
+  351  noop
+  352  jmp   358(pc)
+  354  jmp   368(pc)
+  356  jmp   397(pc)
+label#358:
+  358  jmp   484(pc)
+  360  jmp   424(pc)
+  362  jmp   453(pc)
+  364  noop
+  365  noop
+  366  noop
+  367  noop
+label#368:
+  368  out   106(j)
+  370  out   109(m)
+  372  out   112(p)
+  374  out   32( )
+  376  out   108(l)
+  378  out   97(a)
+  380  out   110(n)
+  382  out   100(d)
+  384  out   115(s)
+  386  out   32( )
+  388  out   45
+  390  out   50
+  392  out   10(\n)
+  394  halt
+  395  noop
+  396  noop
+label#397:
+  397  out   106(j)
+  399  out   109(m)
+  401  out   112(p)
+  403  out   32( )
+  405  out   108(l)
+  407  out   97(a)
+  409  out   110(n)
+  411  out   100(d)
+  413  out   115(s)
+  415  out   32( )
+  417  out   45
+  419  out   49
+  421  out   10(\n)
+  423  halt
+label#424:
+  424  noop
+  425  noop
+  426  out   106(j)
+  428  out   109(m)
+  430  out   112(p)
+  432  out   32( )
+  434  out   108(l)
+  436  out   97(a)
+  438  out   110(n)
+  440  out   100(d)
+  442  out   115(s)
+  444  out   32( )
+  446  out   43
+  448  out   49
+  450  out   10(\n)
+  452  halt
+label#453:
+  453  noop
+  454  noop
+  455  noop
+  456  noop
+  457  out   106(j)
+  459  out   109(m)
+  461  out   112(p)
+  463  out   32( )
+  465  out   108(l)
+  467  out   97(a)
+  469  out   110(n)
+  471  out   100(d)
+  473  out   115(s)
+  475  out   32( )
+  477  out   43
+  479  out   50
+  481  out   10(\n)
+  483  halt
+label#484:
+  484  jt    0  1074(pc)
+  487  jf    1  1074(pc)
+  490  jt    1  495(pc)
+  493  jmp   1074(pc)
+label#495:
+  495  jf    0  500(pc)
+  498  jmp   1074(pc)
+label#500:
+  500  jt    x0  1093(pc)
+  503  jt    x1  1093(pc)
+  506  jt    x2  1093(pc)
+  509  jt    x3  1093(pc)
+  512  jt    x4  1093(pc)
+  515  jt    x5  1093(pc)
+  518  jt    x6  1093(pc)
+  521  jt    x7  1093(pc)
+  524  set   x0  1
+  527  jf    x0  1118(pc)
+  530  set   x0  0
+  533  jt    x0  1118(pc)
+  536  add   x0  1  1
+  540  jt    x0  564(pc)
+  543  out   110(n)
+  545  out   111(o)
+  547  out   32( )
+  549  out   97(a)
+  551  out   100(d)
+  553  out   100(d)
+  555  out   32( )
+  557  out   111(o)
+  559  out   112(p)
+  561  out   10(\n)
+  563  halt
+label#564:
+  564  eq    x1  x0  2
+  568  jt    x1  590(pc)
+  571  out   110(n)
+  573  out   111(o)
+  575  out   32( )
+  577  out   101(e)
+  579  out   113(q)
+  581  out   32( )
+  583  out   111(o)
+  585  out   112(p)
+  587  out   10(\n)
+  589  halt
+label#590:
+  590  push  x0
+  592  push  x1
+  594  pop   x0
+  596  pop   x1
+  598  eq    x2  x1  2
+  602  jf    x2  1158(pc)
+  605  eq    x2  x0  1
+  609  jf    x2  1158(pc)
+  612  gt    x2  x1  x0
+  616  jf    x2  1139(pc)
+  619  gt    x2  x0  x1
+  623  jt    x2  1139(pc)
+  626  gt    x2  42  42
+  630  jt    x2  1139(pc)
+  633  and   x0  28912  19626
+  637  eq    x1  x0  16544
+  641  jf    x1  1177(pc)
+  644  or    x1  28912  19626
+  648  eq    x0  x1  31994
+  652  jt    x0  684(pc)
+  655  out   110(n)
+  657  out   111(o)
+  659  out   32( )
+  661  out   98(b)
+  663  out   105(i)
+  665  out   116(t)
+  667  out   119(w)
+  669  out   105(i)
+  671  out   115(s)
+  673  out   101(e)
+  675  out   32( )
+  677  out   111(o)
+  679  out   114(r)
+  681  out   10(\n)
+  683  halt
+label#684:
+  684  not   x0  0
+  687  eq    x1  x0  32767
+  691  jf    x1  1208(pc)
+  694  not   x0  21845
+  697  eq    x1  x0  10922
+  701  jf    x1  1208(pc)
+  704  call  1285(pc)
+  706  jmp   1289(pc)
+label#708:
+  708  pop   x0
+  710  eq    x1  x0  708
+  714  jt    x1  1289(pc)
+  717  eq    x1  x0  706
+  721  jf    x1  1289(pc)
+  724  set   x0  1287
+  727  call  x0(pc)
+  729  jmp   1289(pc)
+label#731:
+  731  pop   x0
+  733  eq    x1  x0  731
+  737  jt    x1  1289(pc)
+  740  eq    x1  x0  729
+  744  jf    x1  1289(pc)
+  747  add   x0  32767  32767
+  751  eq    x1  x0  32766
+  755  jf    x1  1312(pc)
+  758  eq    x1  32766  x0
+  762  jf    x1  1312(pc)
+  765  add   x0  16384  16384
+  769  jt    x0  1312(pc)
+  772  add   x0  16384  16384
+  776  jt    x0  1312(pc)
+  779  mul   x0  6  9
+  783  eq    x1  x0  42
+  787  jt    x1  1381(pc)
+  790  eq    x1  x0  54
+  794  jf    x1  1414(pc)
+  797  mul   x0  12345  32123
+  801  eq    x1  x0  99(c)
+  805  jf    x1  1312(pc)
+  808  mod   x0  6  3
+  812  eq    x1  x0  0
+  816  jf    x1  1437(pc)
+  819  mod   x0  70(F)  6
+  823  eq    x1  x0  4
+  827  jf    x1  1437(pc)
+  830  mul   x0  32766  15
+  834  eq    x1  x0  32738
+  838  jf    x1  1312(pc)
+  841  jmp   845(pc)
+       .GAP
+label#845:
+  845  rmem  into: x0  addr: 843
+  848  eq    x1  x0  20000
+  852  jf    x1  1239(pc)
+  855  add   x2  843  1
+  859  rmem  into: x0  addr: x2
+  862  eq    x1  x0  10000
+  866  jf    x1  1239(pc)
+  869  set   x0  843
+  872  wmem  addr: x0  value: 30000
+  875  rmem  into: x2  addr: x0
+  878  eq    x1  x2  30000
+  882  jf    x1  1262(pc)
+  885  call  1723(pc)
+  887  rmem  into: x0  addr: 6068
+  890  eq    x1  x0  11
+  894  jf    x1  1239(pc)
+  897  add   x2  6068  1
+  901  rmem  into: x0  addr: x2
+  904  eq    x1  x0  116(t)
+  908  jf    x1  1239(pc)
+  911  wmem  addr: x2  value: 84
+  914  rmem  into: x0  addr: x2
+  917  eq    x1  x0  116(t)
+  921  jt    x1  1262(pc)
+  924  eq    x1  x0  84(T)
+  928  jf    x1  1262(pc)
+  931  wmem  addr: 937  value: 21
+  934  wmem  addr: 938  value: 7
+  937  jmp   941(pc)
+  939  out   978
+  941  out   119(w)
+  943  out   109(m)
+  945  out   101(e)
+  947  out   109(m)
+  949  out   32( )
+  951  out   111(o)
+  953  out   112(p)
+  955  out   119(w)
+  957  out   114(r)
+  959  out   105(i)
+  961  out   116(t)
+  963  out   101(e)
+  965  out   32( )
+  967  out   102(f)
+  969  out   97(a)
+  971  out   105(i)
+  973  out   108(l)
+  975  out   10(\n)
+  977  halt
+label#978:
+  978  add   x1  10(\n)  6080
+  982  add   x1  x1  1
+  986  rmem  into: x2  addr: 6116
+  989  add   x2  x2  6116
+  993  set   x0  6116
+  996  add   x0  x0  1
+label#1000:
+ 1000  gt    x3  x0  x2
+ 1004  jt    x3  1023(pc)
+ 1007  rmem  into: x4  addr: x0
+ 1010  wmem  addr: x1  value: x4
+ 1013  add   x0  x0  1
+ 1017  add   x1  x1  1
+ 1021  jmp   1000(pc)
+label#1023:
+ 1023  rmem  into: x0  addr: 6080
+ 1026  rmem  into: x1  addr: 6099
+ 1029  add   x0  x0  x1
+ 1033  add   x0  x0  1
+ 1037  wmem  addr: 6080  value: x0
+ 1040  wmem  addr: 6099  value: 44
+ 1043  set   x0  6080
+ 1046  call  1518(pc)
+ 1048  push  x0
+ 1050  push  x1
+ 1052  push  x2
+ 1054  set   x0  26851
+ 1057  set   x1  1531
+ 1060  add   x2  4332  20213
+ 1064  call  1458(pc)
+ 1066  pop   x2
+ 1068  pop   x1
+ 1070  pop   x0
+ 1072  jmp   2734(pc)
+label#1074:
+ 1074  out   110(n)
+ 1076  out   111(o)
+ 1078  out   32( )
+ 1080  out   106(j)
+ 1082  out   116(t)
+ 1084  out   47
+ 1086  out   106(j)
+ 1088  out   102(f)
+ 1090  out   10(\n)
+ 1092  halt
+label#1093:
+ 1093  out   110(n)
+ 1095  out   111(o)
+ 1097  out   110(n)
+ 1099  out   122(z)
+ 1101  out   101(e)
+ 1103  out   114(r)
+ 1105  out   111(o)
+ 1107  out   32( )
+ 1109  out   114(r)
+ 1111  out   101(e)
+ 1113  out   103(g)
+ 1115  out   10(\n)
+ 1117  halt
+label#1118:
+ 1118  out   110(n)
+ 1120  out   111(o)
+ 1122  out   32( )
+ 1124  out   115(s)
+ 1126  out   101(e)
+ 1128  out   116(t)
+ 1130  out   32( )
+ 1132  out   111(o)
+ 1134  out   112(p)
+ 1136  out   10(\n)
+ 1138  halt
+label#1139:
+ 1139  out   110(n)
+ 1141  out   111(o)
+ 1143  out   32( )
+ 1145  out   103(g)
+ 1147  out   116(t)
+ 1149  out   32( )
+ 1151  out   111(o)
+ 1153  out   112(p)
+ 1155  out   10(\n)
+ 1157  halt
+label#1158:
+ 1158  out   110(n)
+ 1160  out   111(o)
+ 1162  out   32( )
+ 1164  out   115(s)
+ 1166  out   116(t)
+ 1168  out   97(a)
+ 1170  out   99(c)
+ 1172  out   107(k)
+ 1174  out   10(\n)
+ 1176  halt
+label#1177:
+ 1177  out   110(n)
+ 1179  out   111(o)
+ 1181  out   32( )
+ 1183  out   98(b)
+ 1185  out   105(i)
+ 1187  out   116(t)
+ 1189  out   119(w)
+ 1191  out   105(i)
+ 1193  out   115(s)
+ 1195  out   101(e)
+ 1197  out   32( )
+ 1199  out   97(a)
+ 1201  out   110(n)
+ 1203  out   100(d)
+ 1205  out   10(\n)
+ 1207  halt
+label#1208:
+ 1208  out   110(n)
+ 1210  out   111(o)
+ 1212  out   32( )
+ 1214  out   98(b)
+ 1216  out   105(i)
+ 1218  out   116(t)
+ 1220  out   119(w)
+ 1222  out   105(i)
+ 1224  out   115(s)
+ 1226  out   101(e)
+ 1228  out   32( )
+ 1230  out   110(n)
+ 1232  out   111(o)
+ 1234  out   116(t)
+ 1236  out   10(\n)
+ 1238  halt
+ 1239  out   110(n)
+ 1241  out   111(o)
+ 1243  out   32( )
+ 1245  out   114(r)
+ 1247  out   109(m)
+ 1249  out   101(e)
+ 1251  out   109(m)
+ 1253  out   32( )
+ 1255  out   111(o)
+ 1257  out   112(p)
+ 1259  out   10(\n)
+ 1261  halt
+ 1262  out   110(n)
+ 1264  out   111(o)
+ 1266  out   32( )
+ 1268  out   119(w)
+ 1270  out   109(m)
+ 1272  out   101(e)
+ 1274  out   109(m)
+ 1276  out   32( )
+ 1278  out   111(o)
+ 1280  out   112(p)
+ 1282  out   10(\n)
+ 1284  halt
+function#1285:
+ 1285  jmp   708(pc)
+function#1287:
+ 1287  jmp   731(pc)
+label#1289:
+ 1289  out   110(n)
+ 1291  out   111(o)
+ 1293  out   32( )
+ 1295  out   99(c)
+ 1297  out   97(a)
+ 1299  out   108(l)
+ 1301  out   108(l)
+ 1303  out   32( )
+ 1305  out   111(o)
+ 1307  out   112(p)
+ 1309  out   10(\n)
+ 1311  halt
+label#1312:
+ 1312  out   110(n)
+ 1314  out   111(o)
+ 1316  out   32( )
+ 1318  out   109(m)
+ 1320  out   111(o)
+ 1322  out   100(d)
+ 1324  out   117(u)
+ 1326  out   108(l)
+ 1328  out   111(o)
+ 1330  out   32( )
+ 1332  out   109(m)
+ 1334  out   97(a)
+ 1336  out   116(t)
+ 1338  out   104(h)
+ 1340  out   32( )
+ 1342  out   100(d)
+ 1344  out   117(u)
+ 1346  out   114(r)
+ 1348  out   105(i)
+ 1350  out   110(n)
+ 1352  out   103(g)
+ 1354  out   32( )
+ 1356  out   97(a)
+ 1358  out   100(d)
+ 1360  out   100(d)
+ 1362  out   32( )
+ 1364  out   111(o)
+ 1366  out   114(r)
+ 1368  out   32( )
+ 1370  out   109(m)
+ 1372  out   117(u)
+ 1374  out   108(l)
+ 1376  out   116(t)
+ 1378  out   10(\n)
+ 1380  halt
+label#1381:
+ 1381  out   110(n)
+ 1383  out   111(o)
+ 1385  out   116(t)
+ 1387  out   32( )
+ 1389  out   104(h)
+ 1391  out   105(i)
+ 1393  out   116(t)
+ 1395  out   99(c)
+ 1397  out   104(h)
+ 1399  out   104(h)
+ 1401  out   105(i)
+ 1403  out   107(k)
+ 1405  out   105(i)
+ 1407  out   110(n)
+ 1409  out   103(g)
+ 1411  out   10(\n)
+ 1413  halt
+label#1414:
+ 1414  out   110(n)
+ 1416  out   111(o)
+ 1418  out   32( )
+ 1420  out   109(m)
+ 1422  out   117(u)
+ 1424  out   108(l)
+ 1426  out   116(t)
+ 1428  out   32( )
+ 1430  out   111(o)
+ 1432  out   112(p)
+ 1434  out   10(\n)
+ 1436  halt
+label#1437:
+ 1437  out   110(n)
+ 1439  out   111(o)
+ 1441  out   32( )
+ 1443  out   109(m)
+ 1445  out   111(o)
+ 1447  out   100(d)
+ 1449  out   32( )
+ 1451  out   111(o)
+ 1453  out   112(p)
+ 1455  out   10(\n)
+ 1457  halt
+function#1458:
+ 1458  push  x0
+ 1460  push  x3
+ 1462  push  x4
+ 1464  push  x5
+ 1466  push  x6
+ 1468  set   x6  x0
+ 1471  set   x5  x1
+ 1474  rmem  into: x4  addr: x0
+ 1477  set   x1  0
+label#1480:
+ 1480  add   x3  1  x1
+ 1484  gt    x0  x3  x4
+ 1488  jt    x0  1507(pc)
+ 1491  add   x3  x3  x6
+ 1495  rmem  into: x0  addr: x3
+ 1498  call  x5(pc)
+ 1500  add   x1  x1  1
+ 1504  jt    x1  1480(pc)
+label#1507:
+ 1507  pop   x6
+ 1509  pop   x5
+ 1511  pop   x4
+ 1513  pop   x3
+ 1515  pop   x0
+ 1517  ret
+function#1518:
+ 1518  push  x1
+ 1520  set   x1  1528
+ 1523  call  1458(pc)
+ 1525  pop   x1
+ 1527  ret
+function#1528:
+ 1528  out   x0
+ 1530  ret
+function#1531:
+ 1531  push  x1
+ 1533  set   x1  x2
+ 1536  call  2125(pc)
+ 1538  out   x0
+ 1540  pop   x1
+ 1542  ret
+function#1543:
+ 1543  push  x1
+ 1545  push  x3
+ 1547  rmem  into: x3  addr: x0
+ 1550  jf    x3  1563(pc)
+ 1553  call  1458(pc)
+ 1555  jt    x1  1563(pc)
+ 1558  set   x0  x2
+ 1561  jmp   1566(pc)
+label#1563:
+ 1563  set   x0  32767
+label#1566:
+ 1566  pop   x3
+ 1568  pop   x1
+ 1570  ret
+function#1571:
+ 1571  push  x1
+ 1573  push  x2
+ 1575  set   x2  x1
+ 1578  set   x1  1605
+ 1581  call  1543(pc)
+ 1583  pop   x2
+ 1585  pop   x1
+ 1587  ret
+function#1588:
+ 1588  push  x1
+ 1590  push  x2
+ 1592  set   x2  x1
+ 1595  set   x1  1648
+ 1598  call  1543(pc)
+ 1600  pop   x2
+ 1602  pop   x1
+ 1604  ret
+function#1605:
+ 1605  eq    x0  x0  x2
+ 1609  jf    x0  1618(pc)
+ 1612  set   x2  x1
+ 1615  set   x1  32767
+label#1618:
+ 1618  ret
+function#1619:
+ 1619  push  x3
+ 1621  add   x3  x2  1
+ 1625  add   x3  x3  x1
+ 1629  rmem  into: x3  addr: x3
+ 1632  eq    x3  x0  x3
+ 1636  jt    x3  1645(pc)
+ 1639  set   x2  x1
+ 1642  set   x1  32767
+label#1645:
+ 1645  pop   x3
+ 1647  ret
+function#1648:
+ 1648  push  x1
+ 1650  set   x1  x2
+ 1653  call  1667(pc)
+ 1655  pop   x1
+ 1657  jf    x0  1666(pc)
+ 1660  set   x2  x1
+ 1663  set   x1  32767
+label#1666:
+ 1666  ret
+function#1667:
+ 1667  push  x1
+ 1669  push  x2
+ 1671  push  x3
+ 1673  push  x4
+ 1675  rmem  into: x3  addr: x0
+ 1678  rmem  into: x4  addr: x1
+ 1681  eq    x2  x3  x4
+ 1685  jf    x2  1711(pc)
+ 1688  or    x2  x3  x4
+ 1692  jf    x2  1706(pc)
+ 1695  set   x2  x1
+ 1698  set   x1  1619
+ 1701  call  1458(pc)
+ 1703  jf    x1  1711(pc)
+ 1706  set   x0  1
+ 1709  jmp   1714(pc)
+label#1711:
+ 1711  set   x0  0
+label#1714:
+ 1714  pop   x4
+ 1716  pop   x3
+ 1718  pop   x2
+ 1720  pop   x1
+ 1722  ret
+function#1723:
+ 1723  push  x0
+ 1725  push  x1
+ 1727  set   x1  6068
+label#1730:
+ 1730  rmem  into: x0  addr: x1
+ 1733  push  x1
+ 1735  mul   x1  x1  x1
+ 1739  call  2125(pc)
+ 1741  set   x1  16724
+ 1744  call  2125(pc)
+ 1746  pop   x1
+ 1748  wmem  addr: x1  value: x0
+ 1751  add   x1  x1  1
+ 1755  eq    x0  30050  x1
+ 1759  jf    x0  1730(pc)
+ 1762  pop   x1
+ 1764  pop   x0
+ 1766  ret
+function#1767:
+ 1767  push  x0
+ 1769  push  x2
+ 1771  push  x3
+ 1773  push  x4
+ 1775  push  x5
+ 1777  add   x2  x1  x0
+ 1781  set   x0  x1
+ 1784  set   x5  0
+label#1787:
+ 1787  add   x0  x0  1
+ 1791  gt    x3  x0  x2
+ 1795  jt    x3  1816(pc)
+ 1798  in    x4
+ 1800  eq    x3  x4  10(\n)
+ 1804  jt    x3  1816(pc)
+ 1807  wmem  addr: x0  value: x4
+ 1810  add   x5  x5  1
+ 1814  jmp   1787(pc)
+label#1816:
+ 1816  wmem  addr: x1  value: x5
+ 1819  eq    x3  x4  10(\n)
+ 1823  jt    x3  1830(pc)
+ 1826  in    x4
+ 1828  jmp   1819(pc)
+label#1830:
+ 1830  pop   x5
+ 1832  pop   x4
+ 1834  pop   x3
+ 1836  pop   x2
+ 1838  pop   x0
+ 1840  ret
+function#1841:
+ 1841  push  x3
+ 1843  push  x4
+ 1845  push  x5
+ 1847  push  x6
+ 1849  set   x6  1
+label#1852:
+ 1852  add   x4  x3  x6
+ 1856  rmem  into: x4  addr: x4
+ 1859  add   x5  6125  x6
+ 1863  wmem  addr: x5  value: x4
+ 1866  add   x6  x6  1
+ 1870  rmem  into: x5  addr: 6125
+ 1873  gt    x4  x6  x5
+ 1877  jf    x4  1852(pc)
+ 1880  set   x3  0
+ 1883  set   x4  0
+label#1886:
+ 1886  rmem  into: x5  addr: 6125
+ 1889  mod   x5  x4  x5
+ 1893  add   x5  x5  6125
+ 1897  add   x5  x5  1
+ 1901  rmem  into: x6  addr: x5
+ 1904  mul   x6  x6  5249
+ 1908  add   x6  x6  12345
+ 1912  wmem  addr: x5  value: x6
+ 1915  push  x0
+ 1917  push  x1
+ 1919  set   x1  x6
+ 1922  call  2125(pc)
+ 1924  set   x6  x0
+ 1927  pop   x1
+ 1929  pop   x0
+ 1931  rmem  into: x5  addr: x1
+ 1934  mod   x6  x6  x5
+ 1938  add   x6  x6  1
+ 1942  gt    x5  x6  x2
+ 1946  jt    x5  1952(pc)
+ 1949  set   x3  1
+ 1952  add   x6  x6  x1
+ 1956  rmem  into: x6  addr: x6
+ 1959  add   x4  x4  1
+ 1963  add   x5  x4  6129
+ 1967  wmem  addr: x5  value: x6
+ 1970  rmem  into: x5  addr: 6129
+ 1973  eq    x5  x4  x5
+ 1977  jf    x5  1886(pc)
+ 1980  jf    x3  1880(pc)
+ 1983  push  x0
+ 1985  set   x0  6129
+ 1988  call  1518(pc)
+ 1990  pop   x0
+ 1992  pop   x6
+ 1994  pop   x5
+ 1996  pop   x4
+ 1998  pop   x3
+ 2000  ret
+function#2001:
+ 2001  push  x0
+ 2003  push  x1
+ 2005  push  x2
+ 2007  push  x3
+ 2009  push  x4
+ 2011  push  x5
+ 2013  set   x2  1
+ 2016  set   x5  0
+label#2019:
+ 2019  jf    x0  2092(pc)
+ 2022  eq    x4  x2  10000
+ 2026  set   x3  x0
+ 2029  jt    x4  2040(pc)
+ 2032  mul   x1  x2  10(\n)
+ 2036  mod   x3  x0  x1
+ 2040  set   x4  0
+ 2043  mul   x2  x2  32767
+label#2047:
+ 2047  jf    x3  2060(pc)
+ 2050  add   x4  x4  1
+ 2054  add   x3  x3  x2
+ 2058  jmp   2047(pc)
+label#2060:
+ 2060  mul   x2  x2  32767
+ 2064  mul   x3  x4  x2
+ 2068  mul   x3  x3  32767
+ 2072  add   x0  x0  x3
+ 2076  add   x4  x4  48
+ 2080  mul   x2  x2  10(\n)
+ 2084  add   x5  x5  1
+ 2088  push  x4
+ 2090  jmp   2019(pc)
+label#2092:
+ 2092  jt    x5  2099(pc)
+ 2095  out   48
+ 2097  jmp   2112(pc)
+label#2099:
+ 2099  jf    x5  2112(pc)
+ 2102  pop   x0
+ 2104  out   x0
+ 2106  add   x5  x5  32767
+ 2110  jmp   2099(pc)
+label#2112:
+ 2112  pop   x5
+ 2114  pop   x4
+ 2116  pop   x3
+ 2118  pop   x2
+ 2120  pop   x1
+ 2122  pop   x0
+ 2124  ret
+function#2125:
+ 2125  push  x1
+ 2127  push  x2
+ 2129  and   x2  x0  x1
+ 2133  not   x2  x2
+ 2136  or    x0  x0  x1
+ 2140  and   x0  x0  x2
+ 2144  pop   x2
+ 2146  pop   x1
+ 2148  ret
+ 2149  add   x0  x0  x1
+ 2153  gt    x1  x1  x0
+ 2157  ret
+ 2158  push  x2
+ 2160  gt    x2  x1  x0
+ 2164  mul   x1  x1  32767
+ 2168  add   x0  x0  x1
+ 2172  set   x1  x2
+ 2175  pop   x2
+ 2177  ret
+ 2178  jf    x0  2241(pc)
+ 2181  jf    x1  2241(pc)
+ 2184  push  x2
+ 2186  push  x3
+ 2188  gt    x2  x1  x0
+ 2192  jt    x2  2204(pc)
+ 2195  set   x2  x0
+ 2198  set   x0  x1
+ 2201  set   x1  x2
+ 2204  set   x2  x0
+ 2207  set   x0  0
+ 2210  add   x0  x0  x1
+ 2214  gt    x3  x1  x0
+ 2218  jt    x3  2233(pc)
+ 2221  add   x2  x2  32767
+ 2225  jt    x2  2210(pc)
+ 2228  set   x1  0
+ 2231  jmp   2236(pc)
+ 2233  set   x1  1
+ 2236  pop   x3
+ 2238  pop   x2
+ 2240  ret
+ 2241  set   x0  0
+ 2244  set   x1  0
+ 2247  ret
+ 2248  push  x1
+ 2250  push  x2
+ 2252  jf    x1  2276(pc)
+ 2255  add   x1  x1  32767
+ 2259  and   x2  x0  16384
+ 2263  mul   x0  x0  2
+ 2267  jf    x2  2252(pc)
+ 2270  or    x0  x0  1
+ 2274  jmp   2252(pc)
+ 2276  pop   x2
+ 2278  pop   x1
+ 2280  ret
+ 2281  push  x1
+ 2283  gt    x1  x0  14
+ 2287  jt    x1  2309(pc)
+ 2290  set   x1  x0
+ 2293  set   x0  1
+ 2296  jf    x1  2312(pc)
+ 2299  add   x1  x1  32767
+ 2303  mul   x0  x0  2
+ 2307  jmp   2296(pc)
+ 2309  set   x0  32767
+ 2312  pop   x1
+ 2314  ret
+ 2315  jmp   2734(pc)
+       .GAP
+label#2734:
+ 2734  push  x0
+ 2736  push  x1
+ 2738  push  x2
+ 2740  push  x3
+label#2742:
+ 2742  rmem  into: x1  addr: 2732
+ 2745  rmem  into: x0  addr: 2733
+ 2748  eq    x0  x0  x1
+ 2752  jt    x0  2770(pc)
+ 2755  rmem  into: x0  addr: 2732
+ 2758  add   x0  x0  4
+ 2762  rmem  into: x0  addr: x0
+ 2765  jf    x0  2770(pc)
+ 2768  call  x0(pc)
+label#2770:
+ 2770  rmem  into: x1  addr: 2732
+ 2773  rmem  into: x0  addr: 2733
+ 2776  eq    x0  x0  x1
+ 2780  jt    x0  2791(pc)
+ 2783  set   x0  25974
+ 2786  wmem  addr: x0  value: 0
+ 2789  call  2964(pc)
+label#2791:
+ 2791  wmem  addr: 2733  value: x1
+ 2794  push  x0
+ 2796  push  x1
+ 2798  push  x2
+ 2800  set   x0  27414
+ 2803  set   x1  1531
+ 2806  add   x2  17751  6182
+ 2810  call  1458(pc)
+ 2812  pop   x2
+ 2814  pop   x1
+ 2816  pop   x0
+ 2818  set   x0  32( )
+ 2821  set   x1  25974
+ 2824  call  1767(pc)
+ 2826  out   10(\n)
+ 2828  out   10(\n)
+ 2830  set   x0  25974
+ 2833  set   x1  32( )
+ 2836  call  1571(pc)
+ 2838  eq    x1  x0  32767
+ 2842  jf    x1  2848(pc)
+ 2845  rmem  into: x0  addr: 25974
+label#2848:
+ 2848  set   x2  x0
+ 2851  rmem  into: x1  addr: 25974
+ 2854  push  x1
+ 2856  wmem  addr: 25974  value: x2
+ 2859  set   x0  27398
+ 2862  set   x1  25974
+ 2865  call  1588(pc)
+ 2867  pop   x1
+ 2869  wmem  addr: 25974  value: x1
+ 2872  eq    x1  x0  32767
+ 2876  jf    x1  2885(pc)
+ 2879  set   x0  0
+ 2882  set   x2  0
+label#2885:
+ 2885  add   x1  27406  1
+ 2889  add   x1  x1  x0
+ 2893  rmem  into: x1  addr: x1
+ 2896  rmem  into: x3  addr: 25974
+ 2899  eq    x3  x3  x2
+ 2903  jt    x3  2944(pc)
+ 2906  mul   x0  x2  32767
+ 2910  rmem  into: x3  addr: 25974
+ 2913  add   x3  x0  x3
+ 2917  jf    x2  2924(pc)
+ 2920  add   x3  x3  32767
+label#2924:
+ 2924  mod   x3  x3  32( )
+ 2928  add   x0  25974  x2
+ 2932  jf    x2  2939(pc)
+ 2935  add   x0  x0  1
+label#2939:
+ 2939  wmem  addr: x0  value: x3
+ 2942  jmp   2950(pc)
+label#2944:
+ 2944  set   x0  25974
+ 2947  wmem  addr: x0  value: 0
+label#2950:
+ 2950  call  x1(pc)
+ 2952  jt    x1  2742(pc)
+ 2955  pop   x3
+ 2957  pop   x2
+ 2959  pop   x1
+ 2961  pop   x0
+ 2963  ret
+function#2964:
+ 2964  push  x0
+ 2966  push  x1
+ 2968  push  x2
+ 2970  rmem  into: x1  addr: x0
+ 2973  jf    x1  3032(pc)
+ 2976  call  5921(pc)
+ 2978  jf    x0  3006(pc)
+ 2981  push  x0
+ 2983  call  5990(pc)
+ 2985  set   x1  x0
+ 2988  pop   x0
+ 2990  jf    x1  3006(pc)
+ 2993  add   x1  x0  1
+ 2997  rmem  into: x0  addr: x1
+ 3000  call  1518(pc)
+ 3002  out   10(\n)
+ 3004  jmp   3238(pc)
+ 3006  push  x0
+ 3008  push  x1
+ 3010  push  x2
+ 3012  set   x0  27432
+ 3015  set   x1  1531
+ 3018  add   x2  1772  5383
+ 3022  call  1458(pc)
+ 3024  pop   x2
+ 3026  pop   x1
+ 3028  pop   x0
+ 3030  jmp   3238(pc)
+label#3032:
+ 3032  rmem  into: x0  addr: 2732
+ 3035  push  x0
+ 3037  out   61
+ 3039  out   61
+ 3041  out   32( )
+ 3043  add   x0  x0  0
+ 3047  rmem  into: x0  addr: x0
+ 3050  call  1518(pc)
+ 3052  out   32( )
+ 3054  out   61
+ 3056  out   61
+ 3058  out   10(\n)
+ 3060  pop   x0
+ 3062  push  x0
+ 3064  add   x0  x0  1
+ 3068  rmem  into: x0  addr: x0
+ 3071  rmem  into: x1  addr: x0
+ 3074  eq    x1  x1  2
+ 3078  jf    x1  3104(pc)
+ 3081  push  x0
+ 3083  set   x0  2680
+ 3086  call  5990(pc)
+ 3088  set   x1  x0
+ 3091  pop   x0
+ 3093  add   x0  x0  1
+ 3097  add   x0  x0  x1
+ 3101  rmem  into: x0  addr: x0
+label#3104:
+ 3104  call  1518(pc)
+ 3106  out   10(\n)
+ 3108  pop   x0
+ 3110  push  x0
+ 3112  call  5823(pc)
+ 3114  jf    x0  3146(pc)
+ 3117  push  x0
+ 3119  push  x1
+ 3121  push  x2
+ 3123  set   x0  27455
+ 3126  set   x1  1531
+ 3129  add   x2  10941  8129
+ 3133  call  1458(pc)
+ 3135  pop   x2
+ 3137  pop   x1
+ 3139  pop   x0
+ 3141  rmem  into: x2  addr: 2732
+ 3144  call  5876(pc)
+label#3146:
+ 3146  pop   x0
+ 3148  push  x0
+ 3150  add   x0  x0  2
+ 3154  rmem  into: x0  addr: x0
+ 3157  rmem  into: x0  addr: x0
+ 3160  eq    x2  x0  1
+ 3164  out   10(\n)
+ 3166  out   84(T)
+ 3168  out   104(h)
+ 3170  out   101(e)
+ 3172  out   114(r)
+ 3174  out   101(e)
+ 3176  out   32( )
+ 3178  jt    x2  3189(pc)
+ 3181  out   97(a)
+ 3183  out   114(r)
+ 3185  out   101(e)
+ 3187  jmp   3193(pc)
+label#3189:
+ 3189  out   105(i)
+ 3191  out   115(s)
+label#3193:
+ 3193  out   32( )
+ 3195  call  2001(pc)
+ 3197  out   32( )
+ 3199  out   101(e)
+ 3201  out   120(x)
+ 3203  out   105(i)
+ 3205  out   116(t)
+ 3207  eq    x2  x0  1
+ 3211  jt    x2  3216(pc)
+ 3214  out   115(s)
+label#3216:
+ 3216  out   58
+ 3218  out   10(\n)
+ 3220  pop   x0
+ 3222  push  x0
+ 3224  add   x0  x0  2
+ 3228  rmem  into: x0  addr: x0
+ 3231  set   x1  5814
+ 3234  call  1458(pc)
+ 3236  pop   x0
+label#3238:
+ 3238  pop   x2
+ 3240  pop   x1
+ 3242  pop   x0
+ 3244  ret
+function#3245:
+ 3245  push  x0
+ 3247  push  x1
+ 3249  push  x2
+ 3251  set   x1  x0
+ 3254  rmem  into: x0  addr: 2732
+ 3257  add   x0  x0  2
+ 3261  rmem  into: x0  addr: x0
+ 3264  call  1588(pc)
+ 3266  eq    x2  x0  32767
+ 3270  jt    x2  3302(pc)
+ 3273  rmem  into: x2  addr: 2732
+ 3276  add   x2  x2  3
+ 3280  rmem  into: x2  addr: x2
+ 3283  add   x2  x2  1
+ 3287  add   x2  x2  x0
+ 3291  rmem  into: x2  addr: x2
+ 3294  wmem  addr: 2732  value: x2
+ 3297  wmem  addr: 2733  value: 0
+ 3300  jmp   3326(pc)
+label#3302:
+ 3302  push  x0
+ 3304  push  x1
+ 3306  push  x2
+ 3308  set   x0  27482
+ 3311  set   x1  1531
+ 3314  add   x2  13600  3905
+ 3318  call  1458(pc)
+ 3320  pop   x2
+ 3322  pop   x1
+ 3324  pop   x0
+label#3326:
+ 3326  pop   x2
+ 3328  pop   x1
+ 3330  pop   x0
+ 3332  ret
+ 3333  push  x0
+ 3335  push  x0
+ 3337  push  x1
+ 3339  push  x2
+ 3341  set   x0  27532
+ 3344  set   x1  1531
+ 3347  add   x2  2976  14681
+ 3351  call  1458(pc)
+ 3353  pop   x2
+ 3355  pop   x1
+ 3357  pop   x0
+ 3359  pop   x0
+ 3361  ret
+function#3362:
+ 3362  push  x0
+ 3364  push  x2
+ 3366  push  x0
+ 3368  push  x1
+ 3370  push  x2
+ 3372  set   x0  28037
+ 3375  set   x1  1531
+ 3378  add   x2  22296  3922
+ 3382  call  1458(pc)
+ 3384  pop   x2
+ 3386  pop   x1
+ 3388  pop   x0
+ 3390  set   x2  0
+ 3393  call  5876(pc)
+ 3395  pop   x2
+ 3397  pop   x0
+ 3399  ret
+function#3400:
+ 3400  push  x0
+ 3402  push  x1
+ 3404  push  x2
+ 3406  call  5921(pc)
+ 3408  jf    x0  3457(pc)
+ 3411  add   x1  x0  2
+ 3415  rmem  into: x0  addr: x1
+ 3418  rmem  into: x2  addr: 2732
+ 3421  eq    x2  x0  x2
+ 3425  jf    x2  3457(pc)
+ 3428  wmem  addr: x1  value: 0
+ 3431  push  x0
+ 3433  push  x1
+ 3435  push  x2
+ 3437  set   x0  28054
+ 3440  set   x1  1531
+ 3443  add   x2  1182  5324
+ 3447  call  1458(pc)
+ 3449  pop   x2
+ 3451  pop   x1
+ 3453  pop   x0
+ 3455  jmp   3481(pc)
+label#3457:
+ 3457  push  x0
+ 3459  push  x1
+ 3461  push  x2
+ 3463  set   x0  28062
+ 3466  set   x1  1531
+ 3469  add   x2  27024  1495
+ 3473  call  1458(pc)
+ 3475  pop   x2
+ 3477  pop   x1
+ 3479  pop   x0
+label#3481:
+ 3481  pop   x2
+ 3483  pop   x1
+ 3485  pop   x0
+ 3487  ret
+ 3488  push  x0
+ 3490  push  x1
+ 3492  call  5921(pc)
+ 3494  jf    x0  3539(pc)
+ 3497  add   x1  x0  2
+ 3501  rmem  into: x0  addr: x1
+ 3504  jt    x0  3539(pc)
+ 3507  rmem  into: x0  addr: 2732
+ 3510  wmem  addr: x1  value: x0
+ 3513  push  x0
+ 3515  push  x1
+ 3517  push  x2
+ 3519  set   x0  28090
+ 3522  set   x1  1531
+ 3525  add   x2  2831  8938
+ 3529  call  1458(pc)
+ 3531  pop   x2
+ 3533  pop   x1
+ 3535  pop   x0
+ 3537  jmp   3563(pc)
+ 3539  push  x0
+ 3541  push  x1
+ 3543  push  x2
+ 3545  set   x0  28100
+ 3548  set   x1  1531
+ 3551  add   x2  33  333
+ 3555  call  1458(pc)
+ 3557  pop   x2
+ 3559  pop   x1
+ 3561  pop   x0
+ 3563  pop   x1
+ 3565  pop   x0
+ 3567  ret
+function#3568:
+ 3568  push  x0
+ 3570  push  x1
+ 3572  call  5921(pc)
+ 3574  jf    x0  3601(pc)
+ 3577  add   x1  x0  2
+ 3581  rmem  into: x1  addr: x1
+ 3584  jt    x1  3601(pc)
+ 3587  add   x1  x0  3
+ 3591  rmem  into: x1  addr: x1
+ 3594  jf    x1  3627(pc)
+ 3597  call  x1(pc)
+ 3599  jmp   3651(pc)
+ 3601  push  x0
+ 3603  push  x1
+ 3605  push  x2
+ 3607  set   x0  28135
+ 3610  set   x1  1531
+ 3613  add   x2  8949  13700
+ 3617  call  1458(pc)
+ 3619  pop   x2
+ 3621  pop   x1
+ 3623  pop   x0
+ 3625  jmp   3651(pc)
+ 3627  push  x0
+ 3629  push  x1
+ 3631  push  x2
+ 3633  set   x0  28170
+ 3636  set   x1  1531
+ 3639  add   x2  13452  9459
+ 3643  call  1458(pc)
+ 3645  pop   x2
+ 3647  pop   x1
+ 3649  pop   x0
+label#3651:
+ 3651  pop   x1
+ 3653  pop   x0
+ 3655  ret
+function#3656:
+ 3656  push  x0
+ 3658  push  x1
+ 3660  push  x2
+ 3662  set   x0  2680
+ 3665  call  5990(pc)
+ 3667  jt    x0  3694(pc)
+ 3670  add   x0  2676  2
+ 3674  wmem  addr: x0  value: 32767
+ 3677  add   x0  2680  2
+ 3681  wmem  addr: x0  value: 32767
+ 3684  add   x0  2672  2
+ 3688  wmem  addr: x0  value: 32767
+ 3691  wmem  addr: 2732  value: 2648
+label#3694:
+ 3694  pop   x2
+ 3696  pop   x1
+ 3698  pop   x0
+ 3700  ret
+ 3701  push  x0
+ 3703  push  x1
+ 3705  push  x2
+ 3707  set   x0  28204
+ 3710  set   x1  1531
+ 3713  add   x2  1952  8013
+ 3717  call  1458(pc)
+ 3719  pop   x2
+ 3721  pop   x1
+ 3723  pop   x0
+ 3725  halt
+ 3726  halt
+function#3727:
+ 3727  push  x1
+ 3729  rmem  into: x1  addr: 3726
+ 3732  or    x1  x1  x0
+ 3736  wmem  addr: 3726  value: x1
+ 3739  pop   x1
+ 3741  ret
+function#3742:
+ 3742  wmem  addr: 3726  value: 0
+ 3745  ret
+ 3746  push  x0
+ 3748  set   x0  1
+ 3751  call  3727(pc)
+ 3753  pop   x0
+ 3755  ret
+ 3756  push  x0
+ 3758  set   x0  2
+ 3761  call  3727(pc)
+ 3763  pop   x0
+ 3765  ret
+ 3766  push  x0
+ 3768  set   x0  4
+ 3771  call  3727(pc)
+ 3773  pop   x0
+ 3775  ret
+function#3776:
+ 3776  push  x0
+ 3778  set   x0  8
+ 3781  call  3727(pc)
+ 3783  pop   x0
+ 3785  ret
+function#3786:
+ 3786  push  x0
+ 3788  set   x0  16
+ 3791  call  3727(pc)
+ 3793  pop   x0
+ 3795  ret
+ 3796  push  x0
+ 3798  set   x0  32( )
+ 3801  call  3727(pc)
+ 3803  pop   x0
+ 3805  ret
+function#3806:
+ 3806  push  x0
+ 3808  push  x1
+ 3810  push  x2
+ 3812  push  x3
+ 3814  set   x0  64
+ 3817  call  3727(pc)
+ 3819  push  x0
+ 3821  push  x1
+ 3823  push  x2
+ 3825  set   x0  28236
+ 3828  set   x1  1531
+ 3831  add   x2  409  13260
+ 3835  call  1458(pc)
+ 3837  pop   x2
+ 3839  pop   x1
+ 3841  pop   x0
+ 3843  rmem  into: x0  addr: 3726
+ 3846  set   x1  25866
+ 3849  set   x2  32767
+ 3852  set   x3  28299
+ 3855  call  1841(pc)
+ 3857  push  x0
+ 3859  push  x1
+ 3861  push  x2
+ 3863  set   x0  28303
+ 3866  set   x1  1531
+ 3869  add   x2  11768  6267
+ 3873  call  1458(pc)
+ 3875  pop   x2
+ 3877  pop   x1
+ 3879  pop   x0
+ 3881  wmem  addr: 2732  value: 2417
+ 3884  pop   x3
+ 3886  pop   x2
+ 3888  pop   x1
+ 3890  pop   x0
+ 3892  ret
+function#3893:
+ 3893  push  x0
+ 3895  push  x1
+ 3897  rmem  into: x0  addr: 2462
+ 3900  rmem  into: x1  addr: 27101
+ 3903  eq    x0  x0  x1
+ 3907  jt    x0  3940(pc)
+ 3910  push  x0
+ 3912  push  x1
+ 3914  push  x2
+ 3916  set   x0  28347
+ 3919  set   x1  1531
+ 3922  add   x2  14749  2505
+ 3926  call  1458(pc)
+ 3928  pop   x2
+ 3930  pop   x1
+ 3932  pop   x0
+ 3934  wmem  addr: 2732  value: 2457
+ 3937  wmem  addr: 2733  value: 2457
+label#3940:
+ 3940  pop   x1
+ 3942  pop   x0
+ 3944  ret
+       .GAP
+function#4720:
+ 4720  push  x0
+ 4722  push  x1
+ 4724  push  x2
+ 4726  push  x3
+ 4728  push  x0
+ 4730  push  x1
+ 4732  push  x2
+ 4734  set   x0  28369
+ 4737  set   x1  1531
+ 4740  add   x2  228  152
+ 4744  call  1458(pc)
+ 4746  pop   x2
+ 4748  pop   x1
+ 4750  pop   x0
+ 4752  set   x0  4242
+ 4755  set   x1  25866
+ 4758  set   x2  32767
+ 4761  set   x3  28397
+ 4764  call  1841(pc)
+ 4766  push  x0
+ 4768  push  x1
+ 4770  push  x2
+ 4772  set   x0  28401
+ 4775  set   x1  1531
+ 4778  add   x2  3498  11078
+ 4782  call  1458(pc)
+ 4784  pop   x2
+ 4786  pop   x1
+ 4788  pop   x0
+ 4790  pop   x3
+ 4792  pop   x2
+ 4794  pop   x1
+ 4796  pop   x0
+ 4798  ret
+function#4799:
+ 4799  push  x0
+ 4801  add   x0  2672  2
+ 4805  rmem  into: x0  addr: x0
+ 4808  jt    x0  4858(pc)
+ 4811  add   x0  2684  2
+ 4815  wmem  addr: x0  value: 32767
+ 4818  add   x0  2672  2
+ 4822  wmem  addr: x0  value: 32767
+ 4825  add   x0  2676  2
+ 4829  wmem  addr: x0  value: 0
+ 4832  push  x0
+ 4834  push  x1
+ 4836  push  x2
+ 4838  set   x0  28453
+ 4841  set   x1  1531
+ 4844  add   x2  17329  7620
+ 4848  call  1458(pc)
+ 4850  pop   x2
+ 4852  pop   x1
+ 4854  pop   x0
+ 4856  jmp   4882(pc)
+ 4858  push  x0
+ 4860  push  x1
+ 4862  push  x2
+ 4864  set   x0  28510
+ 4867  set   x1  1531
+ 4870  add   x2  4871  8438
+ 4874  call  1458(pc)
+ 4876  pop   x2
+ 4878  pop   x1
+ 4880  pop   x0
+label#4882:
+ 4882  pop   x0
+ 4884  ret
+function#4885:
+ 4885  push  x0
+ 4887  add   x0  2676  2
+ 4891  wmem  addr: x0  value: 32767
+ 4894  add   x0  2680  2
+ 4898  wmem  addr: x0  value: 0
+ 4901  push  x0
+ 4903  push  x1
+ 4905  push  x2
+ 4907  set   x0  28569
+ 4910  set   x1  1531
+ 4913  add   x2  3368  13772
+ 4917  call  1458(pc)
+ 4919  pop   x2
+ 4921  pop   x1
+ 4923  pop   x0
+ 4925  wmem  addr: 2733  value: 0
+ 4928  pop   x0
+ 4930  ret
+ 4931  push  x0
+ 4933  add   x0  2676  2
+ 4937  wmem  addr: x0  value: 0
+ 4940  add   x0  2680  2
+ 4944  wmem  addr: x0  value: 32767
+ 4947  push  x0
+ 4949  push  x1
+ 4951  push  x2
+ 4953  set   x0  28595
+ 4956  set   x1  1531
+ 4959  add   x2  7748  16807
+ 4963  call  1458(pc)
+ 4965  pop   x2
+ 4967  pop   x1
+ 4969  pop   x0
+ 4971  wmem  addr: 2733  value: 0
+ 4974  pop   x0
+ 4976  ret
+function#4977:
+ 4977  push  x2
+ 4979  push  x3
+ 4981  rmem  into: x2  addr: 2732
+ 4984  eq    x2  x2  2457
+ 4988  jt    x2  5017(pc)
+ 4991  push  x0
+ 4993  push  x1
+ 4995  push  x2
+ 4997  set   x0  28621
+ 5000  set   x1  1531
+ 5003  add   x2  2564  2662
+ 5007  call  1458(pc)
+ 5009  pop   x2
+ 5011  pop   x1
+ 5013  pop   x0
+ 5015  jmp   5336(pc)
+label#5017:
+ 5017  add   x2  x0  2
+ 5021  wmem  addr: x2  value: 32767
+ 5024  rmem  into: x2  addr: 2462
+ 5027  add   x2  x2  27095
+ 5031  add   x2  x2  1
+ 5035  rmem  into: x2  addr: x2
+ 5038  add   x3  2457  1
+ 5042  rmem  into: x3  addr: x3
+ 5045  add   x3  x3  x2
+ 5049  add   x2  x1  48
+ 5053  wmem  addr: x3  value: x2
+ 5056  rmem  into: x2  addr: 2462
+ 5059  add   x2  x2  27101
+ 5063  add   x2  x2  1
+ 5067  wmem  addr: x2  value: x1
+ 5070  push  x0
+ 5072  push  x0
+ 5074  push  x1
+ 5076  push  x2
+ 5078  set   x0  28664
+ 5081  set   x1  1531
+ 5084  add   x2  8183  2817
+ 5088  call  1458(pc)
+ 5090  pop   x2
+ 5092  pop   x1
+ 5094  pop   x0
+ 5096  pop   x0
+ 5098  push  x0
+ 5100  add   x2  x0  0
+ 5104  rmem  into: x0  addr: x2
+ 5107  call  1518(pc)
+ 5109  pop   x0
+ 5111  push  x0
+ 5113  push  x0
+ 5115  push  x1
+ 5117  push  x2
+ 5119  set   x0  28679
+ 5122  set   x1  1531
+ 5125  add   x2  373  1920
+ 5129  call  1458(pc)
+ 5131  pop   x2
+ 5133  pop   x1
+ 5135  pop   x0
+ 5137  pop   x0
+ 5139  rmem  into: x2  addr: 2462
+ 5142  add   x2  x2  1
+ 5146  wmem  addr: 2462  value: x2
+ 5149  rmem  into: x3  addr: 27101
+ 5152  eq    x3  x2  x3
+ 5156  jf    x3  5336(pc)
+ 5159  set   x0  0
+ 5162  add   x1  27101  1
+ 5166  rmem  into: x1  addr: x1
+ 5169  add   x0  x0  x1
+ 5173  add   x1  27101  2
+ 5177  rmem  into: x1  addr: x1
+ 5180  add   x2  27101  3
+ 5184  rmem  into: x2  addr: x2
+ 5187  mul   x2  x2  x2
+ 5191  mul   x1  x1  x2
+ 5195  add   x0  x0  x1
+ 5199  add   x1  27101  4
+ 5203  rmem  into: x1  addr: x1
+ 5206  mul   x2  x1  x1
+ 5210  mul   x2  x2  x1
+ 5214  add   x0  x0  x2
+ 5218  add   x1  27101  5
+ 5222  rmem  into: x1  addr: x1
+ 5225  mul   x1  x1  32767
+ 5229  add   x0  x0  x1
+ 5233  eq    x1  x0  399
+ 5237  jt    x1  5312(pc)
+ 5240  add   x2  2688  2
+ 5244  wmem  addr: x2  value: 2457
+ 5247  add   x2  2692  2
+ 5251  wmem  addr: x2  value: 2457
+ 5254  add   x2  2696  2
+ 5258  wmem  addr: x2  value: 2457
+ 5261  add   x2  2700  2
+ 5265  wmem  addr: x2  value: 2457
+ 5268  add   x2  2704  2
+ 5272  wmem  addr: x2  value: 2457
+ 5275  wmem  addr: 2462  value: 0
+ 5278  set   x0  27095
+ 5281  set   x1  5341
+ 5284  call  1458(pc)
+ 5286  push  x0
+ 5288  push  x1
+ 5290  push  x2
+ 5292  set   x0  28710
+ 5295  set   x1  1531
+ 5298  add   x2  14368  16215
+ 5302  call  1458(pc)
+ 5304  pop   x2
+ 5306  pop   x1
+ 5308  pop   x0
+ 5310  jmp   5336(pc)
+label#5312:
+ 5312  push  x0
+ 5314  push  x1
+ 5316  push  x2
+ 5318  set   x0  28777
+ 5321  set   x1  1531
+ 5324  add   x2  336  1954
+ 5328  call  1458(pc)
+ 5330  pop   x2
+ 5332  pop   x1
+ 5334  pop   x0
+label#5336:
+ 5336  pop   x3
+ 5338  pop   x2
+ 5340  ret
+ 5341  push  x2
+ 5343  add   x2  2457  1
+ 5347  rmem  into: x2  addr: x2
+ 5350  add   x2  x2  x0
+ 5354  wmem  addr: x2  value: 95
+ 5357  pop   x2
+ 5359  ret
+function#5360:
+ 5360  push  x0
+ 5362  push  x1
+ 5364  set   x0  2688
+ 5367  set   x1  2
+ 5370  call  4977(pc)
+ 5372  pop   x1
+ 5374  pop   x0
+ 5376  ret
+function#5377:
+ 5377  push  x0
+ 5379  push  x1
+ 5381  set   x0  2692
+ 5384  set   x1  3
+ 5387  call  4977(pc)
+ 5389  pop   x1
+ 5391  pop   x0
+ 5393  ret
+function#5394:
+ 5394  push  x0
+ 5396  push  x1
+ 5398  set   x0  2696
+ 5401  set   x1  5
+ 5404  call  4977(pc)
+ 5406  pop   x1
+ 5408  pop   x0
+ 5410  ret
+function#5411:
+ 5411  push  x0
+ 5413  push  x1
+ 5415  set   x0  2700
+ 5418  set   x1  7
+ 5421  call  4977(pc)
+ 5423  pop   x1
+ 5425  pop   x0
+ 5427  ret
+function#5428:
+ 5428  push  x0
+ 5430  push  x1
+ 5432  set   x0  2704
+ 5435  set   x1  9
+ 5438  call  4977(pc)
+ 5440  pop   x1
+ 5442  pop   x0
+ 5444  ret
+function#5445:
+ 5445  push  x0
+ 5447  push  x1
+ 5449  push  x2
+ 5451  jf    x7  5605(pc)
+ 5454  push  x0
+ 5456  push  x1
+ 5458  push  x2
+ 5460  set   x0  28844
+ 5463  set   x1  1531
+ 5466  add   x2  238  242
+ 5470  call  1458(pc)
+ 5472  pop   x2
+ 5474  pop   x1
+ 5476  pop   x0
+ 5478  noop
+ 5479  noop
+ 5480  noop
+ 5481  noop
+ 5482  noop
+ 5483  set   x0  4
+ 5486  set   x1  1
+ 5489  call  6027(pc)
+ 5491  eq    x1  x0  6
+ 5495  jf    x1  5579(pc)
+ 5498  push  x0
+ 5500  push  x1
+ 5502  push  x2
+ 5504  set   x0  29014
+ 5507  set   x1  1531
+ 5510  add   x2  15687  5411
+ 5514  call  1458(pc)
+ 5516  pop   x2
+ 5518  pop   x1
+ 5520  pop   x0
+ 5522  set   x0  x7
+ 5525  set   x1  25866
+ 5528  set   x2  32767
+ 5531  push  x3
+ 5533  set   x3  29241
+ 5536  call  1841(pc)
+ 5538  pop   x3
+ 5540  push  x0
+ 5542  push  x1
+ 5544  push  x2
+ 5546  set   x0  29245
+ 5549  set   x1  1531
+ 5552  add   x2  27720  3491
+ 5556  call  1458(pc)
+ 5558  pop   x2
+ 5560  pop   x1
+ 5562  pop   x0
+ 5564  wmem  addr: 2732  value: 2498
+ 5567  wmem  addr: 2733  value: 0
+ 5570  add   x1  2708  2
+ 5574  wmem  addr: x1  value: 32767
+ 5577  jmp   5714(pc)
+label#5579:
+ 5579  push  x0
+ 5581  push  x1
+ 5583  push  x2
+ 5585  set   x0  29400
+ 5588  set   x1  1531
+ 5591  add   x2  23467  4425
+ 5595  call  1458(pc)
+ 5597  pop   x2
+ 5599  pop   x1
+ 5601  pop   x0
+ 5603  jmp   5714(pc)
+label#5605:
+ 5605  push  x0
+ 5607  push  x1
+ 5609  push  x2
+ 5611  set   x0  29545
+ 5614  set   x1  1531
+ 5617  add   x2  6757  644
+ 5621  call  1458(pc)
+ 5623  pop   x2
+ 5625  pop   x1
+ 5627  pop   x0
+ 5629  set   x0  0
+ 5632  add   x2  1  27101
+label#5636:
+ 5636  rmem  into: x1  addr: x2
+ 5639  add   x0  x0  x1
+ 5643  mul   x0  x0  31660
+ 5647  call  2125(pc)
+ 5649  rmem  into: x1  addr: 27101
+ 5652  add   x1  x1  27101
+ 5656  add   x2  x2  1
+ 5660  gt    x1  x2  x1
+ 5664  jf    x1  5636(pc)
+ 5667  set   x1  25866
+ 5670  set   x2  32767
+ 5673  push  x3
+ 5675  set   x3  29663
+ 5678  call  1841(pc)
+ 5680  pop   x3
+ 5682  push  x0
+ 5684  push  x1
+ 5686  push  x2
+ 5688  set   x0  29667
+ 5691  set   x1  1531
+ 5694  add   x2  21081  2581
+ 5698  call  1458(pc)
+ 5700  pop   x2
+ 5702  pop   x1
+ 5704  pop   x0
+ 5706  wmem  addr: 2732  value: 2488
+ 5709  wmem  addr: 2733  value: 0
+ 5712  jmp   5714(pc)
+label#5714:
+ 5714  pop   x2
+ 5716  pop   x1
+ 5718  pop   x0
+ 5720  ret
+ 5721  push  x0
+ 5723  push  x1
+ 5725  push  x2
+ 5727  push  x3
+ 5729  push  x0
+ 5731  push  x1
+ 5733  push  x2
+ 5735  set   x0  29757
+ 5738  set   x1  1531
+ 5741  add   x2  12897  2316
+ 5745  call  1458(pc)
+ 5747  pop   x2
+ 5749  pop   x1
+ 5751  pop   x0
+ 5753  rmem  into: x0  addr: 3955
+ 5756  rmem  into: x1  addr: 3956
+ 5759  call  2125(pc)
+ 5761  rmem  into: x1  addr: 3957
+ 5764  call  2125(pc)
+ 5766  set   x1  25919
+ 5769  set   x2  4
+ 5772  push  x3
+ 5774  set   x3  29942
+ 5777  call  1841(pc)
+ 5779  pop   x3
+ 5781  push  x0
+ 5783  push  x1
+ 5785  push  x2
+ 5787  set   x0  29946
+ 5790  set   x1  1531
+ 5793  add   x2  11994  5382
+ 5797  call  1458(pc)
+ 5799  pop   x2
+ 5801  pop   x1
+ 5803  pop   x0
+ 5805  pop   x3
+ 5807  pop   x2
+ 5809  pop   x1
+ 5811  pop   x0
+ 5813  ret
+function#5814:
+ 5814  out   45
+ 5816  out   32( )
+ 5818  call  1518(pc)
+ 5820  out   10(\n)
+ 5822  ret
+function#5823:
+ 5823  push  x1
+ 5825  push  x2
+ 5827  set   x0  27381
+ 5830  set   x1  5846
+ 5833  set   x2  0
+ 5836  call  1458(pc)
+ 5838  set   x0  x2
+ 5841  pop   x2
+ 5843  pop   x1
+ 5845  ret
+function#5846:
+ 5846  push  x3
+ 5848  push  x4
+ 5850  rmem  into: x3  addr: 2732
+ 5853  add   x4  x0  2
+ 5857  rmem  into: x4  addr: x4
+ 5860  eq    x3  x3  x4
+ 5864  jf    x3  5871(pc)
+ 5867  add   x2  x2  1
+label#5871:
+ 5871  pop   x4
+ 5873  pop   x3
+ 5875  ret
+function#5876:
+ 5876  push  x0
+ 5878  push  x1
+ 5880  set   x0  27381
+ 5883  set   x1  5893
+ 5886  call  1458(pc)
+ 5888  pop   x1
+ 5890  pop   x0
+ 5892  ret
+function#5893:
+ 5893  push  x3
+ 5895  add   x3  x0  2
+ 5899  rmem  into: x3  addr: x3
+ 5902  eq    x3  x2  x3
+ 5906  jf    x3  5918(pc)
+ 5909  add   x0  x0  0
+ 5913  rmem  into: x0  addr: x0
+ 5916  call  5814(pc)
+label#5918:
+ 5918  pop   x3
+ 5920  ret
+function#5921:
+ 5921  push  x1
+ 5923  push  x2
+ 5925  set   x2  x0
+ 5928  set   x0  27381
+ 5931  set   x1  5964
+ 5934  call  1543(pc)
+ 5936  eq    x1  x0  32767
+ 5940  jt    x1  5956(pc)
+ 5943  add   x1  27381  x0
+ 5947  add   x1  x1  1
+ 5951  rmem  into: x0  addr: x1
+ 5954  jmp   5959(pc)
+ 5956  set   x0  0
+label#5959:
+ 5959  pop   x2
+ 5961  pop   x1
+ 5963  ret
+function#5964:
+ 5964  push  x1
+ 5966  set   x1  x2
+ 5969  add   x0  x0  0
+ 5973  rmem  into: x0  addr: x0
+function#5976:
+ 5976  call  1667(pc)
+ 5978  pop   x1
+ 5980  jf    x0  5989(pc)
+ 5983  set   x2  x1
+ 5986  set   x1  32767
+label#5989:
+ 5989  ret
+function#5990:
+ 5990  push  x1
+ 5992  push  x2
+ 5994  add   x0  x0  2
+ 5998  rmem  into: x0  addr: x0
+ 6001  jf    x0  6019(pc)
+ 6004  rmem  into: x1  addr: 2732
+ 6007  eq    x1  x0  x1
+ 6011  jt    x1  6019(pc)
+ 6014  set   x0  0
+ 6017  jmp   6022(pc)
+label#6019:
+ 6019  set   x0  1
+ 6022  pop   x2
+ 6024  pop   x1
+ 6026  ret
+function#6027:
+ 6027  jt    x0  6035(pc)
+ 6030  add   x0  x1  1
+ 6034  ret
+label#6035:
+ 6035  jt    x1  6048(pc)
+ 6038  add   x0  x0  32767
+ 6042  set   x1  x7
+ 6045  call  6027(pc)
+ 6047  ret
+label#6048:
+ 6048  push  x0
+ 6050  add   x1  x1  32767
+ 6054  call  6027(pc)
+ 6056  set   x1  x0
+ 6059  pop   x0
+ 6061  add   x0  x0  32767
+ 6065  call  6027(pc)
+ 6067  ret

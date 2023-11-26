@@ -69,6 +69,19 @@
         'use teleporter',
         'take business card',
         'take strange book',
+        // '.debug',
+        '.set 7 5',
+        'use teleporter',
+        'north',
+        'north',
+        'north',
+        'north',
+        'north',
+        'north',
+        'north',
+        'east',
+        'take journal',
+        'west',
       ];
       let inputBuffer = '';
 
@@ -78,6 +91,7 @@
         setRegisterValue,
         getCurrentPc,
         putUserInput,
+        setDebugMode,
         run,
       } = await instantiate(module, {
         env: {
@@ -127,6 +141,10 @@
 
               if (message === '.pc') {
                 console.log('# current pc:', getCurrentPc());
+                break;
+              } else if (message === '.debug') {
+                console.log('# debug mode on');
+                setDebugMode(true);
                 break;
               }
 
