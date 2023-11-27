@@ -11,6 +11,20 @@
 
       const module = await WebAssembly.compileStreaming(globalThis.fetch(url));
 
+      const newLabels = new Set();
+      const newFunctions = new Set();
+
+      window.printLabels = () => {
+        console.log(
+          'labels:',
+          [...newLabels].sort((a, b) => a - b),
+        );
+        console.log(
+          'functions:',
+          [...newFunctions].sort((a, b) => a - b),
+        );
+      };
+
       let message = undefined;
 
       const outputCharBuffer = [];
@@ -102,6 +116,18 @@
             } else {
               outputCharBuffer.push(String.fromCodePoint(value));
             }
+          },
+          onNewLabel: (pc, labelType) => {
+            if (labelType === 0) {
+              if (!newLabels.has(pc)) {
+                newLabels.add(pc);
+              }
+            } else {
+              if (!newFunctions.has(pc)) {
+                newFunctions.add(pc);
+              }
+            }
+            console.log(`### NEW LABEL: (${pc}) ###`);
           },
         },
       });

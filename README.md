@@ -4,16 +4,6 @@ This project is a solution for Synacor Challenge written in AssemblyScript with 
 
 Some time ago https://challenge.synacor.com/ was the official site of challenge but now is not accessible.
 
-
-
-## Codes
-
-1. tvRWMeHtHEeo
-2. BnriwEfNRgqy
-3. EXlNEmWdvbew
-4. YTbfGOmhthkQ
-5. HszSLqtixYNQ
-
 ## Instructions:
 ```
 > help
