@@ -1,4 +1,5 @@
-import { onNewLabel, outputChar } from './env';
+import { onNewLabel, outputChar, reportOffset } from './env';
+import { reportOp } from './debug';
 
 const enum VmReturnType {
   HALT = 0,
@@ -33,7 +34,6 @@ let pc: u16 = 0;
 const reg: StaticArray<u16> = [0, 0, 0, 0, 0, 0, 0, 0];
 const stack: StaticArray<u16> = new StaticArray<u16>(STACK_CAP);
 let stackIndex: u16 = 0;
-let textBuffer: string[] = [];
 let inputBuffer: u8[] = [];
 let debugMode = false;
 
@@ -107,13 +107,6 @@ function readValue(): u16 {
   throw new Error(`Invalid value ${value}`);
 }
 
-function checkOutput(): void {
-  if (textBuffer.length > 0) {
-    console.log(textBuffer.join(''));
-    textBuffer.length = 0;
-  }
-}
-
 function halt(): VmReturnType {
   return VmReturnType.HALT;
 }
@@ -122,9 +115,7 @@ function nextOp(): VmReturnType {
   const opOffset = pc;
   const opCode = loadOp();
 
-  if (opCode !== 19) {
-    checkOutput();
-  }
+  reportOp(opCode, opOffset);
 
   switch (opCode) {
     // halt: 0
@@ -294,6 +285,7 @@ function nextOp(): VmReturnType {
       const a = readRegister();
       const b = readValue();
       reg[a] = load<u16>(b * 2);
+      reportOffset(2, b, 1);
       break;
     }
 
@@ -303,6 +295,7 @@ function nextOp(): VmReturnType {
       const a = readValue();
       const b = readValue();
       store<u16>(a * 2, b);
+      reportOffset(4, a, 1);
       break;
     }
 
@@ -356,7 +349,6 @@ function nextOp(): VmReturnType {
     //   write the character represented by ascii code <a> to the terminal
     case 19:
       const value = readValue();
-      // textBuffer.push(String.fromCodePoint(value));
       outputChar(value);
       break;
 

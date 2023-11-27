@@ -4,6 +4,26 @@ This project is a solution for Synacor Challenge written in AssemblyScript with 
 
 Some time ago https://challenge.synacor.com/ was the official site of challenge but now is not accessible.
 
+### Heatmap of binary
+
+![](./web/heatmap.png)
+
+#### Legend:
+
+Colors of cells:
+
+* Purple - executed command
+* Red - cell that at the same time was executed and written into 
+* Pink - cell that at the same time was executed and read from 
+* Blue - read and write cell
+* Green - only read cell
+* Yellow - only write cell
+* Gray - no statistics
+
+Intensity of the color tells about frequency of using.
+
+This snapshot was taken before teleport use in second time.
+
 ## Instructions:
 ```
 > help
