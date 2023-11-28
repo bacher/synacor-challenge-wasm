@@ -292,7 +292,7 @@ function nextOp(): VmReturnType {
         onNewLabel(a, 1);
       }
 
-      if (a === 6049) {
+      if (a === 6027) {
         // Optimized version , calculated in tools/confirmation.js
         // Applied only for precalculated reg[7]:
         if (reg[7] === 25734) {

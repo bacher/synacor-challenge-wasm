@@ -4,6 +4,8 @@ This project is a solution for Synacor Challenge written in AssemblyScript with 
 
 Some time ago https://challenge.synacor.com/ was the official site of challenge but now is not accessible.
 
+Binaries were taken from https://github.com/Gyebro/synacor-challenge/
+
 ### Heatmap of binary
 
 ![](./memmaps/8-beginning-wo-checks.png)
@@ -18,6 +20,12 @@ Some time ago https://challenge.synacor.com/ was the official site of challenge 
 <summary>4-teleporter-wo-checks</summary>
 
 ![](./memmaps/4-teleporter-wo-checks.png)
+</details>
+
+<details>
+<summary>8-finish</summary>
+
+![](./memmaps/8-finish.png)
 </details>
 
 #### Legend:
