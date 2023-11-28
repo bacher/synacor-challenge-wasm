@@ -320,7 +320,7 @@ async function run() {
     })
     .join('\n');
 
-  await writeFile('./utils/listing.txt', listing);
+  await writeFile('./tools/listing.txt', listing);
 }
 
 run().catch((error) => {

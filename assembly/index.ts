@@ -309,12 +309,17 @@ function nextOp(): VmReturnType {
       }
 
       if (a === 6049) {
-        reg[0] = reg[7] + 1;
-        reg[1] = reg[7];
-        console.log(
-          `[function overriding #6049 called, continue from pc: (${pc})]`,
-        );
-        break;
+        // Optimized version , calculated in tools/confirmation.js
+        // Applied only for precalculated reg[7]:
+        if (reg[7] === 25734) {
+          console.log(`Current state: ${reg[0]}, ${reg[1]}`);
+          reg[0] = 6;
+
+          console.log(
+            `[function overriding #6049 called, continue from pc: (${pc})]`,
+          );
+          break;
+        }
       }
 
       pushStack(pc);
