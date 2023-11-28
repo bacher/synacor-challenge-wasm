@@ -112,6 +112,23 @@
         'north',
         'take orb',
         'look orb',
+        '.memmap clear',
+        //
+        'north',
+        'east',
+        'east',
+        'north',
+        'west',
+        'south',
+        'east',
+        'east',
+        'west',
+        'north',
+        'north',
+        'east',
+        'vault',
+        'take mirror',
+        'use mirror',
         '.memmap print',
       ];
       let inputBuffer = '';
@@ -198,20 +215,20 @@
               switch (message) {
                 case '.pc': {
                   console.log('# current pc:', getCurrentPc());
-                  break;
+                  continue;
                 }
                 case '.debug': {
                   console.log('# debug mode on');
                   setDebugMode(true);
-                  break;
+                  continue;
                 }
                 case '.memmap print': {
                   printMemoryMap();
-                  break;
+                  continue;
                 }
                 case '.memmap clear': {
                   cleanMemoryMap();
-                  break;
+                  continue;
                 }
               }
 
@@ -226,7 +243,7 @@
 
                 console.log(`# value of ${regIndex} register set to ${value}`);
                 setRegisterValue(regIndex, value);
-                break;
+                continue;
               }
 
               const charCodes = `${message}\n`

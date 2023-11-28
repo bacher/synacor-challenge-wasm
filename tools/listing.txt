@@ -1961,7 +1961,7 @@ function#4682:
  4706  wmem  addr: x0  value: 2645
  4709  pop   x0
  4711  ret
-label#4712:
+function#4712:
  4712  push  x0
  4714  add   x0  2738  2
  4718  rmem  into: x0  addr: x0
