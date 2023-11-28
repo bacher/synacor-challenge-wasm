@@ -1013,9 +1013,11 @@ function#2147:
  2166  pop   x2
  2168  pop   x1
  2170  ret
+label#2171:
  2171  add   x0  x0  x1
  2175  gt    x1  x1  x0
  2179  ret
+function#2180:
  2180  push  x2
  2182  gt    x2  x1  x0
  2186  mul   x1  x1  32767
@@ -1023,6 +1025,7 @@ function#2147:
  2194  set   x1  x2
  2197  pop   x2
  2199  ret
+function#2200:
  2200  jf    x0  2263(pc)
  2203  jf    x1  2263(pc)
  2206  push  x2
@@ -1618,9 +1621,119 @@ label#3962:
  3964  pop   x0
  3966  ret
        .GAP
+label#3980:
+ 3980  push  x0
+ 3982  push  x1
+ 3984  set   x0  2
+ 3987  set   x1  0
+ 3990  call  4240(pc)
+ 3992  pop   x1
+ 3994  pop   x0
+ 3996  ret
+label#3997:
+ 3997  push  x0
+ 3999  push  x1
+ 4001  set   x0  8
+ 4004  set   x1  1
+ 4007  call  4301(pc)
+ 4009  pop   x1
+ 4011  pop   x0
+ 4013  ret
+label#4014:
+ 4014  push  x0
+ 4016  push  x1
+ 4018  set   x0  1
+ 4021  set   x1  2
+ 4024  call  4240(pc)
+ 4026  pop   x1
+ 4028  pop   x0
+ 4030  ret
+function#4031:
+ 4031  push  x0
+ 4033  push  x1
+ 4035  set   x0  1
+ 4038  set   x1  3
+ 4041  call  4301(pc)
+ 4043  call  4555(pc)
+ 4045  pop   x1
+ 4047  pop   x0
+ 4049  ret
+label#4050:
+ 4050  push  x0
+ 4052  push  x1
+ 4054  set   x0  4
+ 4057  set   x1  4
+ 4060  call  4301(pc)
+ 4062  pop   x1
+ 4064  pop   x0
+ 4066  ret
+label#4067:
+ 4067  push  x0
+ 4069  push  x1
+ 4071  set   x0  2
+ 4074  set   x1  5
+ 4077  call  4240(pc)
+ 4079  pop   x1
+ 4081  pop   x0
+ 4083  ret
+label#4084:
+ 4084  push  x0
+ 4086  push  x1
+ 4088  set   x0  11
+ 4091  set   x1  6
+ 4094  call  4301(pc)
+ 4096  pop   x1
+ 4098  pop   x0
+ 4100  ret
+function#4101:
+ 4101  push  x0
+ 4103  push  x1
+ 4105  set   x0  2
+ 4108  set   x1  7
+ 4111  call  4240(pc)
+ 4113  pop   x1
+ 4115  pop   x0
+ 4117  ret
+label#4118:
+ 4118  push  x0
+ 4120  push  x1
+ 4122  set   x0  0
+ 4125  set   x1  8
+ 4128  call  4240(pc)
+ 4130  pop   x1
+ 4132  pop   x0
+ 4134  ret
+label#4135:
+ 4135  push  x0
+ 4137  push  x1
+ 4139  set   x0  4
+ 4142  set   x1  9
+ 4145  call  4301(pc)
+ 4147  pop   x1
+ 4149  pop   x0
+ 4151  ret
+label#4152:
+ 4152  push  x0
+ 4154  push  x1
+ 4156  set   x0  1
+ 4159  set   x1  10(\n)
+ 4162  call  4240(pc)
+ 4164  pop   x1
+ 4166  pop   x0
+ 4168  ret
+function#4169:
+ 4169  push  x0
+ 4171  push  x1
+ 4173  set   x0  18
+ 4176  set   x1  11
+ 4179  call  4301(pc)
+ 4181  pop   x1
+ 4183  pop   x0
+ 4185  ret
 function#4186:
  4186  call  4633(pc)
  4188  ret
+function#4189:
  4189  push  x0
  4191  push  x1
  4193  set   x0  1
@@ -1629,6 +1742,7 @@ function#4186:
  4201  pop   x1
  4203  pop   x0
  4205  ret
+function#4206:
  4206  push  x0
  4208  push  x1
  4210  set   x0  9
@@ -1637,6 +1751,7 @@ function#4186:
  4218  pop   x1
  4220  pop   x0
  4222  ret
+function#4223:
  4223  push  x0
  4225  push  x1
  4227  set   x0  2
@@ -1777,6 +1892,7 @@ function#4537:
  4549  pop   x1
  4551  wmem  addr: x1  value: x0
  4554  ret
+function#4555:
  4555  push  x0
  4557  add   x0  2738  2
  4561  rmem  into: x0  addr: x0
@@ -1845,6 +1961,7 @@ function#4682:
  4706  wmem  addr: x0  value: 2645
  4709  pop   x0
  4711  ret
+label#4712:
  4712  push  x0
  4714  add   x0  2738  2
  4718  rmem  into: x0  addr: x0
