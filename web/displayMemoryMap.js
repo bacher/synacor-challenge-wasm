@@ -8,8 +8,6 @@ const WIDTH = SIDE * CELL_WIDTH;
 const HEIGHT = 800;
 
 export function displayMemoryMap(memoryMap) {
-  console.log('MemoryMap:', memoryMap);
-
   let canvas = document.getElementById('#canvas');
 
   if (!canvas) {

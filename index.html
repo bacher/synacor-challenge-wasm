@@ -108,9 +108,14 @@
         'east',
         'take journal',
         'west',
+        'north',
+        'north',
+        'take orb',
+        'look orb',
         '.memmap print',
       ];
       let inputBuffer = '';
+      let lastPrintedMessage = '';
 
       export const {
         memory,
@@ -124,7 +129,11 @@
         env: {
           outputChar: (value) => {
             if (value === NEW_LINE_CHAR_CODE) {
-              console.log(outputCharBuffer.join(''));
+              const message = outputCharBuffer.join('');
+              if (message !== '' || message !== lastPrintedMessage) {
+                lastPrintedMessage = message;
+                console.log(message);
+              }
               outputCharBuffer.length = 0;
             } else {
               outputCharBuffer.push(String.fromCodePoint(value));
