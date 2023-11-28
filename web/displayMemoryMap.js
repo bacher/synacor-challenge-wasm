@@ -29,6 +29,8 @@ export function displayMemoryMap(memoryMap) {
 
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
+  const highlights = [];
+
   for (let i = 0; i < BINARY_SIZE; i += 1) {
     const [type, count] = memoryMap.get(i) ?? [0, 0];
 
@@ -39,7 +41,7 @@ export function displayMemoryMap(memoryMap) {
     const isRead = Boolean(type & 2);
     const isWrite = Boolean(type & 4);
 
-    ctx.globalAlpha = Math.min(1, 0.4 + count * 0.1);
+    ctx.globalAlpha = Math.min(1, 0.5 + count * 0.1);
 
     if (isOp && isWrite) {
       ctx.fillStyle = 'red';
@@ -61,11 +63,15 @@ export function displayMemoryMap(memoryMap) {
     ctx.beginPath();
     ctx.rect(x * CELL_WIDTH, y * CELL_HEIGHT, CELL_WIDTH, CELL_HEIGHT);
     ctx.fill();
+
+    if (count >= 50) {
+      highlights.push([x, y, count]);
+    }
   }
 
   ctx.globalAlpha = 1;
 
-  ctx.strokeStyle = 'rgba(0,0,0,0.5)';
+  ctx.strokeStyle = 'rgba(50 50 50 / 0.5)';
   for (let i = 0; i < SIDE; i += 1) {
     ctx.beginPath();
     ctx.moveTo(i * CELL_WIDTH, 0);
@@ -77,6 +83,19 @@ export function displayMemoryMap(memoryMap) {
     ctx.beginPath();
     ctx.moveTo(0, i * CELL_HEIGHT);
     ctx.lineTo(WIDTH, i * CELL_HEIGHT);
+    ctx.stroke();
+  }
+
+  for (const [x, y, count] of highlights) {
+    ctx.beginPath();
+    ctx.rect(x * CELL_WIDTH, y * CELL_HEIGHT, CELL_WIDTH, CELL_HEIGHT);
+
+    if (count > 100) {
+      ctx.strokeStyle = 'rgba(255 255 255 / 1)';
+    } else {
+      ctx.strokeStyle = 'rgba(255 255 255 / 0.5)';
+    }
+
     ctx.stroke();
   }
 

@@ -6,7 +6,19 @@ Some time ago https://challenge.synacor.com/ was the official site of challenge 
 
 ### Heatmap of binary
 
-![](./web/heatmap.png)
+![](./memmaps/8-beginning-wo-checks.png)
+
+<details>
+<summary>0-after-checks</summary>
+
+![](./memmaps/0-after-checks.png)
+</details>
+
+<details>
+<summary>4-teleporter-wo-checks</summary>
+
+![](./memmaps/4-teleporter-wo-checks.png)
+</details>
 
 #### Legend:
 
@@ -20,7 +32,9 @@ Colors of cells:
 * Yellow - only write cell
 * Gray - no statistics
 
-Intensity of the color tells about frequency of using.
+Intensity of the color inside cell tells about frequency of using.  
+Cells hit more than 100 times bordered in white frame.  
+Cells hit more than 50 times bordered in semi-transparent white frame.
 
 This snapshot was taken before teleport use in second time.
 

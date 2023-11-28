@@ -32,11 +32,16 @@
         displayMemoryMap(memoryMap);
       };
 
+      window.cleanMemoryMap = () => {
+        memoryMap.clear();
+      };
+
       let message = undefined;
 
       const outputCharBuffer = [];
 
       const inputLines = [
+        '.memmap clear',
         'take tablet',
         'use tablet',
         'doorway',
@@ -88,20 +93,22 @@
         'north',
         'take teleporter',
         'use teleporter',
+        // '.memmap print',
         'take business card',
         'take strange book',
         '.set 7 25734',
         'use teleporter',
-        // 'north',
-        // 'north',
-        // 'north',
-        // 'north',
-        // 'north',
-        // 'north',
-        // 'north',
-        // 'east',
-        // 'take journal',
-        // 'west',
+        'north',
+        'north',
+        'north',
+        'north',
+        'north',
+        'north',
+        'north',
+        'east',
+        'take journal',
+        'west',
+        '.memmap print',
       ];
       let inputBuffer = '';
 
@@ -177,13 +184,24 @@
 
               await timeout(0);
 
-              if (message === '.pc') {
-                console.log('# current pc:', getCurrentPc());
-                break;
-              } else if (message === '.debug') {
-                console.log('# debug mode on');
-                setDebugMode(true);
-                break;
+              switch (message) {
+                case '.pc': {
+                  console.log('# current pc:', getCurrentPc());
+                  break;
+                }
+                case '.debug': {
+                  console.log('# debug mode on');
+                  setDebugMode(true);
+                  break;
+                }
+                case '.memmap print': {
+                  printMemoryMap();
+                  break;
+                }
+                case '.memmap clear': {
+                  cleanMemoryMap();
+                  break;
+                }
               }
 
               const match = message.match(/^\.set (\d+) (\d+)$/);
